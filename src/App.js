@@ -19,7 +19,7 @@ const App = () => {
         </Route>
         <Route path="/products" exact component={Products} />
         <Route path="/carts" exact component={CartEmpty} />
-        <Route path="/flower/*" exact component={ProductDetail} />
+        <Route path="/flowers/*" exact component={ProductDetail} />
         <Route path="/flowers" exact component={Flowers} /> 
       </Switch>
       <Footer />

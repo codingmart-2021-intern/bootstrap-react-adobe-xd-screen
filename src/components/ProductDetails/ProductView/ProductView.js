@@ -40,7 +40,7 @@ const ProductView = () => {
                                     {
                                         productData.colors.map((data, index) => {
                                             if(index == 0){
-                                                return (<button className="btn btn-primary bg-skin_thin rounded-lg text-uppercase" key={index}>{data}</button>)
+                                                return (<button className="btn btn-primary bg-skin_thin text-uppercase" key={index}>{data}</button>)
                                             }else {
                                                 return (<button className="btn btn-outline-secondary text-uppercase" key={index}>{data}</button>)
                                             }
@@ -54,9 +54,9 @@ const ProductView = () => {
                                     {
                                         productData.sizes.map( (data, index) => {
                                             if( index ==0 ) {
-                                                return (<button className="btn btn-primary bg-skin_thin rounded-lg text-uppercase" key={index}>{data}</button>)
+                                                return (<button className="btn btn-primary bg-skin_thin text-uppercase" key={index}>{data}</button>)
                                             }else {
-                                                return (<button className="btn btn-outline-secondary border border-gray-500 rounded-lg text-uppercase" key={index}>{data}</button>)
+                                                return (<button className="btn btn-outline-secondary border text-uppercase" key={index}>{data}</button>)
                                             }
                                         } )
                                     }
@@ -66,10 +66,10 @@ const ProductView = () => {
                                 <h2 className="fw-bold fs-5 col">Quantity</h2>
                                 <div className="d-flex gap-2 self-start col">
                                     <button
-                                        className="px-6 py-2 border border-gray-500 rounded-lg d-flex justify-content-center align-items-center gap-2"><span
-                                            className="font-medium text-2xl text-skin_dark">
+                                        className="px-6 py-2 border d-flex justify-content-center align-items-center gap-2"><span
+                                            className="font-medium text-skin_dark">
                                             {"<"} </span>
-                                            <h1 className="fs-5">{productData.quantity[0]}</h1> <span className="font-medium text-2xl text-skin_dark"> {">"} </span>
+                                            <h1 className="fs-5">{productData.quantity[0]}</h1> <span className="font-medium text-skin_dark"> {">"} </span>
                                     </button>
                                 </div>
                             </div>
@@ -80,15 +80,15 @@ const ProductView = () => {
     return (
         <div className="w-90 mx-auto">
             <div className="d-flex gap-2">
-                <span className="inline-block"><Link className=" hover:text-skin_dark inline-block" to="/">Home </Link> / <Link className=" hover:text-skin_dark inline-block" to="/all-products"> Flowers </Link> / </span>
-                <span className="inline-block"><Link className=" text-skin_dark inline-block" to={useLocation().pathname}>{productData.product_title}</Link></span>
+                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to="/all-products"> Flowers </Link> / </span>
+                <span className=""><Link className=" text-skin_dark " to={useLocation().pathname}>{productData.product_title}</Link></span>
             </div>
             <div className="d-flex flex-column flex-sm-row jusitfy-content-between align-items-start my-4">
-                <div className="position-relative self-center">
-                    <img  className="object-cover h-28 w-24 " src={imageUrl.img} alt={productData.product_title} />
+                <div className="position-relative">
+                    <img  className="h-28 w-24 " src={imageUrl.img} alt={productData.product_title} />
                     {productData.stock == 0 && 
-                        <div className="w-full h-full bg-white_o_3 position-absolute top-0 d-flex justify-content-center align-items-center">
-                            <button className="py-5 px-12 bg-footer_gray text-skin_dark">OUT OF STOCK</button>
+                        <div className="bg-white position-absolute top-0 d-flex justify-content-center align-items-center">
+                            <button className="text-skin_dark">OUT OF STOCK</button>
                         </div>
                     }
                 </div>
@@ -111,7 +111,7 @@ const ProductView = () => {
                     </div>
                     {Specifications}
                     <div>
-                        <p className="inline">{productData.description}</p>
+                        <p className="">{productData.description}</p>
                         <span><a className=" text-skin_dark" href="">Read More</a></span>
                         <span className="text-skin_dark"> {">"}</span>
                     </div>
@@ -125,19 +125,19 @@ const ProductView = () => {
             </div>
             <div className="w-24">
                 <div className="position-relative">
-                    <div className="cursor-pointer bg-skin_dark fs-1 rounded-full d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50" onClick={()=>slideChange(-1)}>
+                    <div className="pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50" onClick={()=>slideChange(-1)}>
                             <i className='bx bxs-chevron-left fs-3' ></i>
                     </div>
                     <div className="d-flex">
                         {productData.slider_image.map((data) => {
                             return <img
                             key={data.id}
-                            className={`cursor-pointer mx-2 w-4 h-5 object-cover pointer-event ${imageUrl.id === data.id ? "opacity-1" : "opacity-40"} hover:opacity-1`} src={data.img}
+                            className={`mx-2 w-4 h-5 object-cover pointer-event ${imageUrl.id === data.id ? "" : ""} `} src={data.img}
                             alt=""
                             onClick={()=>changeImage(data.img, data.id)} />
                         })}
                     </div>
-                    <div className="cursor-pointer bg-skin_dark fs-1 rounded-full d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50 start-100" onClick={()=>slideChange(1)}>
+                    <div className="pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50 start-100" onClick={()=>slideChange(1)}>
                             <i className='bx bxs-chevron-right fs-3' ></i>
                     </div>
                 </div>

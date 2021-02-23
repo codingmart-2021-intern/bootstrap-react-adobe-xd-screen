@@ -1,6 +1,11 @@
+import AllFlowers from "../components/Flowers/Flowers"
+import Notification from "../components/Notification/Notification"
 const Flowers = () => {
     return (
-        <h1>Flowers</h1>
+        <div>
+            <Notification />
+            <AllFlowers />
+        </div>
     )
 }
 
