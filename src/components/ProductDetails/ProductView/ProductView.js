@@ -80,15 +80,15 @@ const ProductView = () => {
     return (
         <div className="w-90 mx-auto">
             <div className="d-flex gap-2">
-                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to="/all-products"> Flowers </Link> / </span>
+                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to="/flowers"> Flowers </Link> / </span>
                 <span className=""><Link className=" text-skin_dark " to={useLocation().pathname}>{productData.product_title}</Link></span>
             </div>
             <div className="d-flex flex-column flex-sm-row jusitfy-content-between align-items-start my-4">
-                <div className="position-relative">
+                <div className="position-relative d-flex align-items-center justify-content-center">
                     <img  className="h-28 w-24 " src={imageUrl.img} alt={productData.product_title} />
                     {productData.stock == 0 && 
-                        <div className="bg-white position-absolute top-0 d-flex justify-content-center align-items-center">
-                            <button className="text-skin_dark">OUT OF STOCK</button>
+                        <div className="w-100 h-100 bg-white-5 position-absolute top-0 d-flex justify-content-center align-items-center">
+                            <button className="py-2 px-4 bg-footer_gray text-skin_dark">OUT OF STOCK</button>
                         </div>
                     }
                 </div>
