@@ -1,16 +1,18 @@
 import "./Footer.css"
 
+import { Link } from "react-router-dom"
+
 const Footer = () => {
     return (
         <footer className="text-white text-start">
-            <div className="bg-dark py-5">
+            <div className="bg-footer_gray py-5">
                 <div className="w-75 mx-auto">
                     <h1>LOGO</h1>
                     <div className="row">
                         <div className="col">
                             <h5>Policies</h5>
                             <ul className="list-unstyled text-small d-flex flex-column gap-2">
-                                <li><a className="" href="#">Privacy</a></li>
+                                <li><Link to="/privacy">Privacy</Link></li>
                                 <li><a className="" href="#">Disclaimer</a></li>
                                 <li><a className="" href="#">Terms &amp; Conditions</a></li>
                             </ul>
@@ -26,8 +28,8 @@ const Footer = () => {
                         <div className="col">
                             <h5>Company</h5>
                             <ul className="list-unstyled text-small d-flex flex-column gap-2">
-                                <li><a className="" href="#">About us</a></li>
-                                <li><a className="" href="#">Contact us</a></li>
+                                <li><Link to="/about" >About us</Link></li>
+                                <li><Link to="/contact">Contact us</Link></li>
                                 <li><a className="" href="#">FAQ's</a></li>
                             </ul>
                         </div>
@@ -42,7 +44,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-danger py-2 d-flex justify-content-center align-items-center flex-column flex-sm-row">
+            <div className="bg-skin_dark py-2 d-flex justify-content-center align-items-center flex-column flex-sm-row">
                 <span className="text-white mx-3">Follow us </span>
                 <div className="d-flex justify-content-around align-items-center gap-3">
                     <div

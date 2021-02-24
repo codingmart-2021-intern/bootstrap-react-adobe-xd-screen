@@ -23,3 +23,114 @@
 .object-cover {
     object-fit: cover;
 }
+
+
+:root {
+    --footer_gray: #2A2A2A;
+    --gray_dark: #292B2A;
+    --skin_light: #FFF3EB;
+    --skin_thin: #F9DED1;
+    --skin_dark: #E2886C;
+    --white_light: #99999929;
+    --white_dark: #F2F2F2;
+    --gray_light: #5D5D5D;
+    --white: #FFFFFF;
+    --gray_o_5: rgba(0;, 0, 0, 0.3);
+    --white_o_3: rgba(250, 250, 250, 0.5);
+}
+
+.w-4 {
+    width: 4rem;
+}
+
+.h-5 {
+    height: 5rem;
+}
+
+.h-6 {
+    height: 6rem;
+}
+.w-24 {
+    width: 24rem;
+}
+
+.w-24 {
+    width: 21rem;
+}
+
+.h-28 {
+    height: 28rem;
+}
+
+.h-40 {
+    height: 40rem;
+}
+.w-90 {
+    width: 90%;
+}
+
+.bg-footer_gray {
+    background-color: #2A2A2A
+}
+.bg-gray_dark{
+    background-color:  #292B2A
+}
+.bg-skin_light {
+    background-color: #FFF3EB;
+}
+.bg-skin_thin {
+    background-color: #F9DED1;
+}
+.bg-skin_dark {
+    background-color: #E2886C
+}
+.bg-white_light {
+    background-color: #99999929
+}
+.bg-white_dark {
+    background-color: #F2F2F2
+}
+.bg-gray_light {
+    background-color: #5D5D5D
+}
+
+.bg-white-5 {
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.text-footer_gray {
+    color: #2A2A2A
+}
+.text-gray_dark{
+    color:  #292B2A
+}
+.text-skin_light {
+    color: #FFF3EB
+}
+.text-skin_thin {
+    color: #F9DED1
+}
+.text-skin_dark {
+    color: #E2886C
+}
+.text-white_light {
+    color: #99999929
+}
+.text-white_dark {
+    color: #F2F2F2
+}
+.text-gray_light {
+    color: #5D5D5D
+}
+
+.pointer-event {
+    cursor: pointer;
+}
+
+.opacity-5 {
+    opacity: .5;
+}
+
+.opacity-10 {
+    opacity: 10;
+}
