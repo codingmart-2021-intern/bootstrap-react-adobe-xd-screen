@@ -1,0 +1,47 @@
+.space{
+    display: none;
+}
+@media (max-width:767px) {
+    .animate{
+        display: block;
+        background-color: #fff;
+        border: 2px solid red;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 20px;
+        animation-name: moveInTop;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: backwards;
+    }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        z-index: -100;
+    }
+    .dash{
+        height: 1px;
+        width: 70px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.342);
+    }
+    .space{
+        display: block;
+    }
+}
+
+
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

@@ -1,0 +1,59 @@
+.heading{
+    font-size: 15px;
+    word-spacing: 0.1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+.left-arrow{
+    font-size: 20px;
+}
+
+
+.right-arrow{
+    font-size: 20px;
+}
+
+.underscore {
+    text-decoration: underline;
+}
+
+.cart-item {
+    background-color:#FFF3EB ;
+}
+
+@media(min-width:500px) {
+    .end{
+        text-align: end;
+        margin-left: 100px;
+        margin-top: 3px;
+    }
+}
+
+@media (min-width:768px) {
+    .center {
+        text-align: center;
+        margin-left: -20px;
+    }
+    .end{
+        text-align: end;
+        margin-left: 30px;
+        margin-top: 3px;
+    }
+    .left {
+        margin-left: -20px;
+    }
+
+    .price{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+    .left {
+        margin-left: -10px;
+    }
+}
