@@ -625,6 +625,10 @@ const allProductsList = [
     }
 ]
 
+const teddyProducts = [
+    
+]
+
 module.exports = {
     allProductsList
 }    
