@@ -5,10 +5,6 @@ import './App.css';
 import Products from "./views/Products";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer/Footer";
-<<<<<<< HEAD
-import './App.css';
-import NotFound from "./components/notFound/NotFound";
-=======
 import ProductDetail from "./views/ProductDetails";
 import ListAllProducts from "./views/ListAllProducts";
 import Cart from "./components/cart/catrt";
@@ -17,8 +13,7 @@ import Privacy from "./views/privacy";
 import FAQs from "./views/faqs";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
-
->>>>>>> 171a5269b5df9c2c0b6e2d95fc671696dc54a2ca
+import NotFound from "./components/notFound/NotFound";
 
 const App = () => {
   return (
@@ -27,10 +22,6 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/products" exact component={Products} />
-<<<<<<< HEAD
-        <Route path="/carts" exact component={CartEmpty} />
-        <Route path="/notfound" exact component={NotFound} />
-=======
         <Route path="/flowers" exact component={props => <ListAllProducts {...props} />} />
         <Route path="/teddies" exact component={props => <ListAllProducts {...props} />} />
         <Route path="/cakes" exact component={props => <ListAllProducts {...props} />} />
@@ -44,7 +35,7 @@ const App = () => {
         <Route path="/privacy" exact component={Privacy} />
         <Route path="/faq" exact component={FAQs} />
         <Route path="/contact" exact component={Contact} />
->>>>>>> 171a5269b5df9c2c0b6e2d95fc671696dc54a2ca
+        <Route path="/notfound" exact component={NotFound} />
       </Switch>
       <Footer />
     </Router>

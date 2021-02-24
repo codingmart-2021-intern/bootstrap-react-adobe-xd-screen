@@ -14,10 +14,10 @@ const Login=()=>{
                         <input className="p-1 rounded-3 border" type="password" name="password" id="password" placeholder=' '/>
                         <label className="position-relative input-label px-3" htmlFor="password">Password<sup className="text-danger">*</sup></label>
                     </div>
-                    <div className="d-flex justify-content-between pb-2 ">
-                        <div className="d-flex w-25 align-items-center text-nowrap ">
+                    <div className="d-flex justify-content-between pb-2 mob-text ">
+                        <div className="d-flex align-items-center text-nowrap ">
                         <span className="remBox"><input type="checkbox" name="remember" id="remember"/></span>
-                            <span className="text-xs position-relative bottom-0.5">Remember me</span>
+                            <span className="position-relative">Remember me</span>
                         </div>
                         <div className="d-flex">
                             <a href="#" className="mr-5 orange text-capitalize underline">forgot password?</a>
