@@ -125,19 +125,19 @@ const ProductView = () => {
             </div>
             <div className="w-24">
                 <div className="position-relative">
-                    <div className="pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50" onClick={()=>slideChange(-1)}>
+                    <div className="z-index-10 pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50" onClick={()=>slideChange(-1)}>
                             <i className='bx bxs-chevron-left fs-3' ></i>
                     </div>
                     <div className="d-flex">
                         {productData.slider_image.map((data) => {
                             return <img
                             key={data.id}
-                            className={`mx-2 w-4 h-5 object-cover pointer-event ${imageUrl.id === data.id ? "" : ""} `} src={data.img}
+                            className={`mx-2 w-4 h-5 object-cover pointer-event ${imageUrl.id === data.id ? "opacity-10" : "opacity-5"} `} src={data.img}
                             alt=""
                             onClick={()=>changeImage(data.img, data.id)} />
                         })}
                     </div>
-                    <div className="pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50 start-100" onClick={()=>slideChange(1)}>
+                    <div className="z-index-10 pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50 start-100" onClick={()=>slideChange(1)}>
                             <i className='bx bxs-chevron-right fs-3' ></i>
                     </div>
                 </div>
