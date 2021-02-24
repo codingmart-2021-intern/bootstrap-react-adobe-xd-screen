@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/Footer/Footer";
 import ProductDetail from "./views/ProductDetails"
 import Flowers from "./views/Flowers"
+import Home from "./views/Home"
 
 import './App.css';
 
@@ -14,9 +15,7 @@ const App = () => {
     <Router>
       <Header />
       <Switch>
-        <Route path="/" exact>
-          <h1>Hello</h1>
-        </Route>
+        <Route path="/" exact component={Home} />
         <Route path="/products" exact component={Products} />
         <Route path="/carts" exact component={CartEmpty} />
         <Route path="/flowers/*" exact component={ProductDetail} />
