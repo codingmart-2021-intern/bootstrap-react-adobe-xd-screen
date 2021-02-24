@@ -21,7 +21,25 @@
     z-index: 500;
 }
 
+.w-8 {
+    width: 4rem;
+}
 
+.h-8 {
+    height: 4rem;
+}
+
+.w-10 {
+    width: 10rem !important;
+}
+
+.h-20 {
+    height: 20rem !important;
+}
+
+.object-cover {
+    object-fit: cover;
+}
 
 @media(max-width:1200px) {
     .right-arrow{

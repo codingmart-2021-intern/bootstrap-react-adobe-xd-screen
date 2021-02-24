@@ -1,98 +1,72 @@
-import React, { Component } from "react";
-import "./Features.css";
-import { allProductsList } from "../../../services/ProductDataList";
-
-//image_path
-//assets/rose_bucket.jpeg
-
-class Features extends Component {
-
-    state = {
-        products: [],
-        leftIndex: 0,
-        rightIndex: 4
-    }
-
-    componentDidMount() {
-        this.setState({ products: allProductsList })
-    }
-
-    leftScroll = () => {
-
-        if (this.state.leftIndex === 0 || this.state.rightIndex === 0) {
-            this.setState({
-                leftIndex: 4,
-                rightIndex: 8
-            })
+import { Link } from 'react-router-dom'
+import {allProductsList} from '../../../services/ProductDataList'
+import {useState} from 'react'
+import "./Features.css"
+const Features = () => { 
+    const [slideRange, setSlideRange] = useState({start:3,end:6})
+    const [productDataList, setProductDataList] = useState(allProductsList.slice(0,4))
+    const changeSlide = (index) => {
+        let currentRange = {}
+        if(slideRange.start < 0 || slideRange.end > allProductsList.length) {
+            currentRange = {start:3,end:6}
+        }else {
+            if(index == 1){
+                console.log(slideRange);
+                currentRange = {
+                    start: slideRange.start + 1,
+                    end: slideRange.end + 1
+                }
+            }else {
+                currentRange = {
+                    start: slideRange.start - 1,
+                    end: slideRange.end - 1
+                }
+            }
         }
-        else {
-            this.setState({
-                leftIndex: this.state.leftIndex - 1,
-                rightIndex: this.state.rightIndex - 1
-            })
-        }
+        console.log("-",currentRange);
+        setSlideRange(currentRange)
+        let currentData = allProductsList.slice(currentRange.start, currentRange.end+1)
+        setProductDataList(currentData)
+        
     }
-
-
-    rightScroll = () => {
-
-        if (this.state.leftIndex > this.state.products.length - 1 || this.state.rightIndex > this.state.products.length - 1) {
-            this.setState({
-                leftIndex: 8,
-                rightIndex: 12
-            })
-        }
-        else {
-            this.setState({
-                leftIndex: this.state.leftIndex + 1,
-                rightIndex: this.state.rightIndex + 1
-            })
-        }
-    }
-
-    render() {
-
-        let productData = this.state.products.slice(this.state.leftIndex, this.state.rightIndex);
-
-        return (
-            <div className="container" >
-                <h2 className="text-center">Featured Product</h2>
-
-                <div className="block">
-                    <button className="btn rounded-circle left-arrow" onClick={this.leftScroll} style={{ backgroundColor: "#E2886C" }}>
-                        <i className="fas fa-angle-left text-white"></i>
-                    </button>
+    return (
+        <div className="w-75 mx-auto">
+            <h1 className="text-center fw-bold fs-3 my-5">Featured Product</h1>
+            <div className="d-flex justify-content-center align-items-center position-relative">
+                <div onClick={() => changeSlide(-1)} className="z-10 p-2 h-8 w-8 bg-skin_dark fs-3 rounded-circle d-flex justify-content-center align-items-center pointer-event text-white position-absolute top-50 start-0">
+                    <i className='bx bxs-chevron-left' ></i>
                 </div>
-
                 <div className="row">
-                    {productData.map((item, i) => {
-
-                        return (
-                            <div key={i} className="col-sm-6 col-md-6 col-lg-3 mt-2 ">
-                                <div className="card rounded" >
-                                    {/* <span className="text-uppercase text-white bg-dark px-4 py-2 opacity font-weight-bold view ml-5"> quick view  </span> */}
-                                    <img className="card-img-top img-fluid w-95" src="assets/rose_bucket.jpeg" />
-
-                                    <div className="card-body">
-                                        <p className="card-text">{item.product_title}</p>
-                                        <p className="card-text">&#8377; {item.current_price}  <span className="text-muted ml-4 through">&#8377; {item.actual_price}</span></p>
+                    {
+                        productDataList.map(productData => (
+                            <Link className="col" to={ "/detail/" + productData.product_id }>
+                                <div className="d-flex flex-column gap-2 " key={productData.product_id}>
+                                    <div className="position-relative">
+                                        <img className="w-10 h-20 object-cover" src={productData.slider_image[0].img} alt={productData.product_title} />
+                                        {   productData.stock == 0 && 
+                                            <div className="w-100 h-100 bg-white position-absolute top-0 d-flex justify-content-center align-items-center">
+                                                <button className="py-2 px-4 bg-footer_gray text-skin_dark">OUT OF STOCK</button>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div className="px-3 py-1 d-flex flex-column gap-2 bg-skin_light">
+                                        <h3>{productData.product_title}</h3>
+                                        <div className="d-flex gap-2">
+                                            <span className="fw-bold fs-8"> &#8377; {productData.current_price}</span>
+                                            <span className="fw-normal fs-8 text-decoration-line-through"> &#8377; {productData.actual_price}</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })}
-
+                            </Link>
+                        ))
+                    }
                 </div>
-                <div className="block">
-                    <button className="btn rounded-circle right-arrow" onClick={this.rightScroll} style={{ backgroundColor: "#E2886C" }}>
-                        <i className="fas fa-angle-right  text-white " ></i>
-                    </button>
+                <div onClick={() => changeSlide(1)} className="z-10 p-2 h-8 w-8 bg-skin_dark fs-3 rounded-circle d-flex justify-content-center align-items-center pointer-event text-white position-absolute top-50 start-0">
+                    <i className='bx bxs-chevron-right' ></i>
                 </div>
             </div>
-
-        )
-    }
+        </div>
+    )
 }
-
 
 export default Features;
