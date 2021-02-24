@@ -25,9 +25,9 @@ const CartDetails = (props) => {
                                 <div className="btn btn-light border rounded  px-3">
                                     <div className="d-flex align-items-center justify-content-between">
 
-                                        <i className="fas fa-angle-left text-danger left-arrow" onClick={() => props.reduce(item.id)} ></i>
+                                        <i className="fas fa-angle-left text-danger left-arrows" onClick={() => props.reduce(item.id)} ></i>
                                         <span className="px-2"> {item.qty} </span>
-                                        <i className="fas fa-angle-right text-danger right-arrow" onClick={() => props.add(item.id)}></i>
+                                        <i className="fas fa-angle-right text-danger right-arrows" onClick={() => props.add(item.id)}></i>
 
                                     </div>
                                 </div>
