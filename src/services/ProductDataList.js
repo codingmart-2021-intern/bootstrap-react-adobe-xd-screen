@@ -8,7 +8,7 @@ const allProductsList = [
         "colors": ["red", "orange", "blue"],
         "sizes": ["small", "large"],
         "quantity": [500],
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, perferendis eveniet? Nobis accusantium dolor, quam magnam excepturi quasi amet quae magni, optio odio ad maxime necessitatibus itaque",
+        "description": "Lorem, n ipsum dolor sit amet consectetur adipisicing elit. Veritatis, perferendis eveniet? Nobis accusantium dolor, quam magnam excepturi quasi amet quae magni, optio odio ad maxime necessitatibus itaque",
         "stock": 5,
         "product_id": 1,
         "slider_image": [
