@@ -70,7 +70,7 @@ const HeaderTop = () => {
               </svg>
             </button>
           </Link>
-          <Link to="#">
+          <Link to="cart">
             <button className="dark-pink btn btn-lg shadow-none rounded-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

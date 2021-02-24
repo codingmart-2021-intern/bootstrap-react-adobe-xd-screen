@@ -22,10 +22,6 @@ class Header extends Component {
     this.setState((preState) => {
       return { sideBarToggleState: !preState.sideBarToggleState };
     });
-<<<<<<< HEAD
-
-=======
->>>>>>> 52f76b2c10f471114d0583b99a90ec1cbb313029
   }
 
   render() {

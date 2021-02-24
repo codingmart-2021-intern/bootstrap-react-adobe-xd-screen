@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import "./SideBar.css";
 
 class SideBar extends Component {
-
   render() {
-
     // Sidebar toggle className
     let sideBar = "side-bar";
     if (this.props.show) {
@@ -26,7 +24,7 @@ class SideBar extends Component {
         </div>
         {/* ----- End Sidebar Logo and cancel section ----- */}
         {/* ----- Start Sidebar Nav Links ----- */}
-        <Link className="text-decoration-none" style={{ color: "black" }}>
+        <Link to="/" className="text-decoration-none" style={{ color: "black" }}>
           <div className="py-2">
             <h5 className="fw-bold">Home</h5>
           </div>
@@ -68,6 +66,7 @@ class SideBar extends Component {
               </div>
               <div className="mobile-nested-dropdown-shop-menu">
                 <Link
+                  to="/flowers"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -76,6 +75,7 @@ class SideBar extends Component {
                   </div>
                 </Link>
                 <Link
+                  to="#"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -103,6 +103,7 @@ class SideBar extends Component {
               </div>
               <div className="mobile-nested-dropdown-shop-menu">
                 <Link
+                  to="/flowers"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -111,6 +112,7 @@ class SideBar extends Component {
                   </div>
                 </Link>
                 <Link
+                  to="#"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -130,7 +132,11 @@ class SideBar extends Component {
                 <h6>Teddy</h6>
               </div>
             </Link>
-            <Link className="text-decoration-none" style={{ color: "black" }}>
+            <Link
+              to="/flowers"
+              className="text-decoration-none"
+              style={{ color: "black" }}
+            >
               <div className="py-2">
                 <h6>Flower</h6>
               </div>
@@ -243,12 +249,33 @@ class SideBar extends Component {
           </div>
         </div>
         {/* ----- End Profile Dropdown ----- */}
-        <div className="py-2">
-          <h5 className="fw-bold">About</h5>
-        </div>
-        <div className="py-2">
-          <h5 className="fw-bold">Contact</h5>
-        </div>
+        <Link
+          to="/about"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">About</h5>
+          </div>
+        </Link>
+        <Link
+          to="/contact"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">Contact</h5>
+          </div>
+        </Link>
+        <Link
+          to="/privacy"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">Privacy</h5>
+          </div>
+        </Link>
         <div className="py-2">
           <h5 className="fw-bold">Track order</h5>
         </div>

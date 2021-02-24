@@ -11,4 +11,5 @@
 
 .filter-menu:hover .filter-dropdown{
     display: block;
+    z-index: 1001;
 }

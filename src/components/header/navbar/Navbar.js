@@ -7,7 +7,7 @@ const Navbar = () => {
     // Nav link section
     <Row className="px-0 pt-2 justify-content-md-center nav-row">
       <Col className="d-flex flex-column justify-content-center p-0 m-0">
-        <Link to="#" className="d-flex w-100 text-decoration-none">
+        <Link to="/" className="d-flex w-100 text-decoration-none">
           <div
             className="mx-auto align-items-center"
             style={{ color: "black" }}
@@ -653,7 +653,7 @@ const Navbar = () => {
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/flowers"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
@@ -689,29 +689,29 @@ const Navbar = () => {
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/about"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Occassions</a>
+          <a>About</a>
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/privacy"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Relations</a>
+          <a>Privacy</a>
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/contact"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Combos</a>
+          <a>Contact</a>
         </Link>
       </Col>
     </Row>

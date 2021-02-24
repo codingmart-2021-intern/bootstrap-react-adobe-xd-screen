@@ -43,7 +43,7 @@ class MobileViewHeader extends Component {
           <Col>
             {/* Cart icon */}
             <div className="d-flex justify-content-end">
-              <Link to="#">
+              <Link to="/cart">
                 <button className="dark-pink btn shadow-none rounded-circle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

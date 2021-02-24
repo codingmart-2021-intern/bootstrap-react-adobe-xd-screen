@@ -27,7 +27,7 @@ class Filter extends Component {
     }
 
     return (
-      <div className="w-90 mx-auto px-4 pt-2 pb-4">
+      <div className="w-75 mx-auto pt-2 pb-4">
         {/* ----- Start Filter Popup ----- */}
         <FilterPopup
           filterToggle={this.FilterToggel}
