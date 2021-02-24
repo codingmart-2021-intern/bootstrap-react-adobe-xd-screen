@@ -1,19 +1,10 @@
-import './App.css';
+const Path = (props) => {
 
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
+  return (
+      <div className="mx-auto w-90 py-5" >
+          <p>{props.normal}<span className="text-light-brown" >{props.highlight}</span></p>
+      </div>
+  )
+}
 
-import Footer from '../Footer/Footer'
-
-const App = () => (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <h1>Home</h1>
-        </Route>
-      </Switch>
-    <Footer />
-  </Router>
-)
-
-export default App;
+export default Path;

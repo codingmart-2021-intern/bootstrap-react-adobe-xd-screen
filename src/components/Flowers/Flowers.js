@@ -22,7 +22,7 @@ const AllFlowers = () => {
     const pathname = useLocation().pathname
     return (
         <div className="w-75 mx-auto products-container">
-            <div className="d-flex justify-content-between my-5">
+            {/* <div className="d-flex justify-content-between my-5">
                 <button className="btn btn-outline-secondary">Filters</button>
                 <input
                     onKeyUp={(e) => handleFilter(e)}
@@ -35,7 +35,7 @@ const AllFlowers = () => {
                 <div className="d-flex align-items-center">
                     <span>Sort By:</span>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="filterBy" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn " type="button" id="filterBy" data-bs-toggle="dropdown" aria-expanded="false">
                             Featured Items
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="filterBy">
@@ -45,10 +45,10 @@ const AllFlowers = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="text-center my-5">
+            </div> */}
+            {/* <div className="text-center my-5">
                 <h5>Search Results for "<span className="text-skin_dark fw-bold">{`${inputValue}`}</span>"</h5>
-            </div>
+            </div> */}
             <div className="row gap-5 text-dark">
                 {
                     productList.map(productData => (
