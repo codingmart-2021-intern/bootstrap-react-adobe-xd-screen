@@ -8,13 +8,13 @@ const allProductsList = [
         "colors": ["red", "orange", "blue"],
         "sizes": ["small", "large"],
         "quantity": [500],
-        "description": "Lorem, n ipsum dolor sit amet consectetur adipisicing elit. Veritatis, perferendis eveniet? Nobis accusantium dolor, quam magnam excepturi quasi amet quae magni, optio odio ad maxime necessitatibus itaque",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, perferendis eveniet? Nobis accusantium dolor, quam magnam excepturi quasi amet quae magni, optio odio ad maxime necessitatibus itaque",
         "stock": 5,
         "product_id": 1,
         "slider_image": [
             {
                 id: 0,
-                img: "https://images.pexels.com/photos/5638193/pexels-photo-5638193.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                img: "/assets/images/rose_bucket.jpeg"
             },
             {
                 id: 1,
@@ -34,7 +34,7 @@ const allProductsList = [
         ]
     },
     {
-        "product_title": "Pretty Pink Rose Basket Made from Bengal Bamboo",
+        "product_title": "Bengal Bamboo",
         "actual_price": 6785,
         "current_price": 2635,
         "colors": ["red", "orange", "blue"],
@@ -66,7 +66,7 @@ const allProductsList = [
         ]
     },
     {
-        "product_title": "Pretty Pink Rose Basket Made from Bengal Bambooasdfn",
+        "product_title": "asdf asgije erndfgn",
         "actual_price": 7649,
         "current_price": 2849,
         "colors": ["red", "orange", "blue"],
@@ -98,7 +98,7 @@ const allProductsList = [
         ]
     },
     {
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooDaisy",
+        "product_title": "Daisy",
         "actual_price": 7095,
         "current_price": 4906,
         "colors": ["red", "orange", "blue"],
@@ -130,7 +130,7 @@ const allProductsList = [
         ]
     },
     {
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooRose",
+        "product_title": "Rose",
         "actual_price": 3950,
         "current_price": 1035,
         "colors": ["red", "orange", "blue"],
@@ -163,7 +163,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooIris",
+        "product_title": "Iris",
         "actual_price": 8596,
         "current_price": 2035,
         "colors": ["red", "orange", "blue"],
@@ -196,7 +196,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooOrchid",
+        "product_title": "Orchid",
         "actual_price": 6035,
         "current_price": 2845,
         "colors": ["red", "orange", "blue"],
@@ -229,7 +229,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooTulip",
+        "product_title": "Tulip",
         "actual_price": 6874,
         "current_price": 2086,
         "colors": ["red", "orange", "blue"],
@@ -262,7 +262,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooSun Flower",
+        "product_title": "Sun Flower",
         "actual_price": 8573,
         "current_price": 2946,
         "colors": ["red", "orange", "blue"],
@@ -295,7 +295,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooCyclamen",
+        "product_title": "Cyclamen",
         "actual_price": 6749,
         "current_price": 2496,
         "colors": ["red", "orange", "blue"],
@@ -328,7 +328,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooCarnation",
+        "product_title": "Carnation",
         "actual_price": 7584,
         "current_price": 2495,
         "colors": ["red", "orange", "blue"],
@@ -361,7 +361,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooPoppy",
+        "product_title": "Poppy",
         "actual_price": 9473,
         "current_price": 2484,
         "colors": ["red", "orange", "blue"],
@@ -394,7 +394,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooPansy",
+        "product_title": "Pansy",
         "actual_price": 6886,
         "current_price": 2394,
         "colors": ["red", "orange", "blue"],
@@ -427,7 +427,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooViolet",
+        "product_title": "Violet",
         "actual_price": 5967,
         "current_price": 1344,
         "colors": ["red", "orange", "blue"],
@@ -460,7 +460,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooMimosa",
+        "product_title": "Mimosa",
         "actual_price": 9586,
         "current_price": 4896,
         "colors": ["red", "orange", "blue"],
@@ -493,7 +493,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooLily",
+        "product_title": "Lily",
         "actual_price": 8596,
         "current_price": 2943,
         "colors": ["red", "orange", "blue"],
@@ -526,7 +526,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooDaffodil",
+        "product_title": "Daffodil",
         "actual_price": 7585,
         "current_price": 4930,
         "colors": ["red", "orange", "blue"],
@@ -559,7 +559,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooHyacinth",
+        "product_title": "Hyacinth",
         "actual_price": 8687,
         "current_price": 3485,
         "colors": ["red", "orange", "blue"],
@@ -592,7 +592,7 @@ const allProductsList = [
     },
     {
 
-        "product_title": "Pretty Pink Rose Basket Made from Bengal BambooAnemone",
+        "product_title": "Anemone",
         "actual_price": 9300,
         "current_price": 4333,
         "colors": ["red", "orange", "blue"],
