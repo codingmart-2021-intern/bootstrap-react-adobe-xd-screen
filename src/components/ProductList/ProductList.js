@@ -2,16 +2,19 @@ import { useLocation } from "react-router-dom";
 import { allProductsList } from '../../services/ProductDataList'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import "./Flowers.css"
+import Notification from "../Notification/Notification"
 
-const AllFlowers = () => {
+import "./ProductList.css"
 
-    const [productList, setProductList] = useState(allProductsList)
+const ProductList = () => {
+    const category = useLocation().pathname.split("/")[1]
+
+    const [productList, setProductList] = useState(allProductsList[category])
     const [inputValue, setInputValue] = useState("")
     const handleFilter = (e) => {
         const input = e.target.value.toLowerCase()
         const filterData = []
-        allProductsList.forEach(function (item) {
+        productList.forEach(function (item) {
             if (item.product_title.toLowerCase().indexOf(input) != -1) {
                 filterData.push(item)
             }
@@ -19,9 +22,11 @@ const AllFlowers = () => {
         setInputValue(input)
         setProductList(filterData)
     }
-    const pathname = useLocation().pathname
     return (
-        <div className="w-75 mx-auto products-container">
+        <div>
+            <Notification productData={productList[0]} />
+            <div className="w-75 mx-auto products-container">
+            
             {/* <div className="d-flex justify-content-between my-5">
                 <button className="btn btn-outline-secondary">Filters</button>
                 <input
@@ -34,14 +39,14 @@ const AllFlowers = () => {
                 />
                 <div className="d-flex align-items-center">
                     <span>Sort By:</span>
-                    <div class="dropdown">
-                        <button class="btn " type="button" id="filterBy" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="dropdown">
+                        <button className="btn " type="button" id="filterBy" data-bs-toggle="dropdown" aria-expanded="false">
                             Featured Items
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="filterBy">
-                            <li><a class="dropdown-item" href="#">Categoris</a></li>
-                            <li><a class="dropdown-item" href="#">Size</a></li>
-                            <li><a class="dropdown-item" href="#">Colors</a></li>
+                        <ul className="dropdown-menu" aria-labelledby="filterBy">
+                            <li><a className="dropdown-item" href="#">Categoris</a></li>
+                            <li><a className="dropdown-item" href="#">Size</a></li>
+                            <li><a className="dropdown-item" href="#">Colors</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,7 +57,7 @@ const AllFlowers = () => {
             <div className="row gap-5 text-dark">
                 {
                     productList.map(productData => (
-                        <Link className="col" to={"/flowers/" + productData.product_id}>
+                        <Link className="col" to={`/${category}/${productData.product_id}`}>
                             <div className="w-15" key={productData.product_id}>
                                 <div className="position-relative">
                                     <img className="w-15 h-15 object-cover" src={productData.slider_image[0].img} alt={productData.product_title} />
@@ -75,7 +80,8 @@ const AllFlowers = () => {
                 }
             </div>
         </div>
+        </div>
     )
 }
 
-export default AllFlowers;
+export default ProductList;

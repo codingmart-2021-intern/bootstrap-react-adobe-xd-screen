@@ -4,10 +4,10 @@ import {useState} from 'react'
 import "./Features.css"
 const Features = () => { 
     const [slideRange, setSlideRange] = useState({start:3,end:6})
-    const [productDataList, setProductDataList] = useState(allProductsList.slice(0,4))
+    const [productDataList, setProductDataList] = useState(allProductsList["flowers"].slice(0,4))
     const changeSlide = (index) => {
         let currentRange = {}
-        if(slideRange.start < 0 || slideRange.end > allProductsList.length) {
+        if(slideRange.start < 0 || slideRange.end > allProductsList["flowers"].length) {
             currentRange = {start:3,end:6}
         }else {
             if(index == 1){
@@ -25,7 +25,7 @@ const Features = () => {
         }
         console.log("-",currentRange);
         setSlideRange(currentRange)
-        let currentData = allProductsList.slice(currentRange.start, currentRange.end+1)
+        let currentData = allProductsList["flowers"].slice(currentRange.start, currentRange.end+1)
         setProductDataList(currentData)
         
     }
@@ -40,7 +40,7 @@ const Features = () => {
                     {
                         productDataList.map(productData => (
                             <Link className="card-c col" to={ "/flowers/" + productData.product_id }>
-                                <div className="d-flex flex-column gap-2 w-10" key={productData.product_id}>
+                                <div className="d-flex flex-column w-10" key={productData.product_id}>
                                     <div className="position-relative d-flex justify-content-center align-items-center ">
                                         <img className="w-10 h-12 object-cover" src={productData.slider_image[0].img} alt={productData.product_title} />
                                         {   productData.stock == 0 && 

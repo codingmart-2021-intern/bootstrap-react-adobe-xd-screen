@@ -35,7 +35,7 @@ const Navbar = () => {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                 />
               </svg>
@@ -63,7 +63,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -93,7 +93,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -135,7 +135,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -165,7 +165,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -207,7 +207,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -237,7 +237,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -279,7 +279,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -309,7 +309,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -355,7 +355,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -385,7 +385,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -427,7 +427,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -457,7 +457,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -499,7 +499,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -529,7 +529,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -571,7 +571,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -601,7 +601,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -657,34 +657,34 @@ const Navbar = () => {
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Flowers</a>
+          Flowers
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/cakes"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Cakes</a>
+          Cakes
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="chocolates"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Chocolates</a>
+          Chocolates
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="teddies"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Teddy</a>
+          Teddy
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
@@ -693,7 +693,7 @@ const Navbar = () => {
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>About</a>
+          About
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
@@ -702,7 +702,7 @@ const Navbar = () => {
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Privacy</a>
+          Privacy
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
@@ -711,7 +711,7 @@ const Navbar = () => {
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Contact</a>
+          Contact
         </Link>
       </Col>
     </Row>

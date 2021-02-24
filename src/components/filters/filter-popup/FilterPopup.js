@@ -44,7 +44,7 @@ class FilterPopup extends Component {
                   width="24"
                   height="24"
                   fill="currentColor"
-                  class="bi bi-x"
+                  className="bi bi-x"
                   viewBox="0 0 16 16"
                 >
                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
@@ -66,7 +66,7 @@ class FilterPopup extends Component {
                   width="24"
                   height="24"
                   fill="currentColor"
-                  class="bi bi-x"
+                  className="bi bi-x"
                   viewBox="0 0 16 16"
                 >
                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
@@ -85,90 +85,90 @@ class FilterPopup extends Component {
             <h5>
               <strong>Price</strong>
             </h5>
-            <label class="lable-container">
+            <label className="lable-container">
               $0 - $500
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $501 - $1000
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $1001 - $1500
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $1501 - $2000
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $2000 {">"}
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
           </div>
           <div className="w-100 my-3">
             <h5>
               <strong>Price</strong>
             </h5>
-            <label class="lable-container">
+            <label className="lable-container">
               $0 - $500
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $501 - $1000
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $1001 - $1500
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $1501 - $2000
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $2000 {">"}
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
           </div>
           <div className="w-100 my-3">
             <h5>
               <strong>Price</strong>
             </h5>
-            <label class="lable-container">
+            <label className="lable-container">
               $0 - $500
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $501 - $1000
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $1001 - $1500
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $1501 - $2000
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
-            <label class="lable-container">
+            <label className="lable-container">
               $2000 {">"}
               <input type="checkbox" />
-              <span class="checkmark"></span>
+              <span className="checkmark"></span>
             </label>
           </div>
           <div className="w-100 my-5">

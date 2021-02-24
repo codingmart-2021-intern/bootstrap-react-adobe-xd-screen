@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
-        <footer className="text-white text-start">
+        <footer className="footer text-white text-start">
             <div className="bg-footer_gray py-5">
                 <div className="w-75 mx-auto">
                     <h1>LOGO</h1>
@@ -36,9 +36,30 @@ const Footer = () => {
                         <div className="col">
                             <h5>Contact</h5>
                             <ul className="list-unstyled text-small d-flex flex-column gap-2">
-                                <li><a className="" href="#">Bangalore</a></li>
-                                <li><a className="" href="#">7457475826</a></li>
-                                <li><a className="" href="#">instamojo@gmail.in</a></li>
+                                <li>
+                                    <a className="d-flex gap-1" href="#">
+                                        <div className="w-1 h-1 bg-skin_dark rounded-circle d-flex justify-content-center align-items-center">
+                                            <i className="fs-6 bx bx-location-plus"></i>
+                                        </div>
+                                        <span>Bangalore</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="d-flex gap-2" href="#">
+                                        <div className="w-1 h-1 bg-skin_dark rounded-circle d-flex justify-content-center align-items-center">
+                                        <i className="text-lg bx bx-phone"></i>
+                                        </div>
+                                        <span>8576475837</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a className="d-flex gap-1" href="#">
+                                        <div className="w-1 h-1 bg-skin_dark rounded-circle d-flex justify-content-center align-items-center">
+                                            <i className="text-lg bx bx-mail-send"></i>
+                                        </div>
+                                        <span>instamojo@g.co</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>

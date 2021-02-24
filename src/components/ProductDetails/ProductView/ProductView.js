@@ -6,10 +6,13 @@ import { Link } from 'react-router-dom'
 import './ProductView.css'
 const ProductView = () => {
 
-    const pathname = useLocation().pathname.split("/")[2]
+    const location = useLocation().pathname.split("/")
+    const category = location[1]
+    const product_id = location[2]
     const productData = getProductData()
     function getProductData() {
-        let ans = allProductsList.filter((data, index) => data.product_id == pathname)
+        const productsList = allProductsList[category]
+        let ans = productsList.filter((data, index) => data.product_id == product_id)
         return ans[0]
     }
     let Specifications = ""
@@ -80,12 +83,12 @@ const ProductView = () => {
     return (
         <div className="w-90 mx-auto">
             <div className="d-flex gap-2">
-                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to="/flowers"> Flowers </Link> / </span>
+                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to={`/${category}`}> {category.toUpperCase()} </Link> / </span>
                 <span className=""><Link className=" text-skin_dark " to={useLocation().pathname}>{productData.product_title}</Link></span>
             </div>
             <div className="d-flex flex-column flex-sm-row jusitfy-content-between align-items-start my-4">
                 <div className="position-relative d-flex align-items-center justify-content-center">
-                    <img className="h-28 w-24 " src={imageUrl.img} alt={productData.product_title} />
+                    <img className="h-28 w-24 object-cover" src={imageUrl.img} alt={productData.product_title} />
                     {productData.stock == 0 &&
                         <div className="w-100 h-100 bg-white-5 position-absolute top-0 d-flex justify-content-center align-items-center">
                             <button className="py-2 px-4 bg-footer_gray text-skin_dark">OUT OF STOCK</button>
