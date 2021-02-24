@@ -1,0 +1,49 @@
+.side-bar {
+  height: 100%;
+  background-color: white;
+  box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 88%;
+  padding: 2rem;
+  max-width: 400px;
+  z-index: 20000;
+  transform: translateX(-110%);
+  transition: transform 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.side-bar.open {
+  transform: translateX(0);
+}
+
+.mobile-dropdown-shop-menu {
+  display: none;
+}
+
+.mobile-shop-menu:hover > .mobile-dropdown-shop-menu {
+  display: block;
+}
+
+.mobile-shop-menu:hover .d-arrow {
+  width: 24;
+  height: 24;
+  color: black;
+  transform: rotateZ(180deg);
+}
+
+.mobile-nested-dropdown-shop-menu {
+  display: none;
+}
+
+.mobile-nested-shop-menu:hover .mobile-nested-dropdown-shop-menu {
+  display: block;
+}
+
+.mobile-nested-shop-menu:hover .n-arrow {
+  width: 24;
+  height: 24;
+  color: black;
+  transform: rotateZ(180deg);
+}
