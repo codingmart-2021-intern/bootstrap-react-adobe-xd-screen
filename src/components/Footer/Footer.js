@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = () => {
     return (
         <footer className="text-white text-start">
-            <div className="bg-dark py-5">
+            <div className="bg-footer_gray py-5">
                 <div className="w-75 mx-auto">
                     <h1>LOGO</h1>
                     <div className="row">
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-danger py-2 d-flex justify-content-center align-items-center flex-column flex-sm-row">
+            <div className="bg-skin_dark py-2 d-flex justify-content-center align-items-center flex-column flex-sm-row">
                 <span className="text-white mx-3">Follow us </span>
                 <div className="d-flex justify-content-around align-items-center gap-3">
                     <div

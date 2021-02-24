@@ -11,7 +11,8 @@ import Cart from "./components/cart/catrt";
 // import Home from "./components/home/home";
 import About from "./views/about";
 import Privacy from "./views/privacy";
-import home from "./views/Home";
+import Home from "./views/Home";
+import Contact from "./views/Contact"
 
 import './App.css';
 
@@ -20,13 +21,15 @@ const App = () => {
     <Router>
       <Header />
       <Switch>
-        <Route path="/" exact component={home} />
+        <Route path="/" exact component={Home} />
         <Route path="/products" exact component={Products} />
         <Route path="/flowers" exact component={Flowers} />
         <Route path="/flowers/*" exact component={ProductDetail} />
         <Route path="/cart" exact component={Cart} />
         <Route path="/about" exact  component={About} />
         <Route path="/privacy" exact component={Privacy} />
+        <Route path="/contact" exact component={Contact} />
+
       </Switch>
       <Footer />
     </Router>
