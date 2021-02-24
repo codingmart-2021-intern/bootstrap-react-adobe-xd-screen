@@ -76,9 +76,10 @@ class Cart extends Component {
 
         return (
             <div className="container">
+                <div className="my-4">Home / Flowers / <span style={{color:"#E2886C"}} > Pretty Pink Rose Basket made from Bengal Bamboo</span> </div>
                 {this.state.products.length <= 0 ? <CartEmpty />
                     : <div className="row">
-                        <div className="col-md-8 col-sm-12 mt-4 sticky" >
+                        <div className="col-md-8 col-sm-12 mt-3 sticky" >
                             <CartDetails
                                 products={this.state.products}
                                 add={this.onAddQty}
@@ -86,7 +87,7 @@ class Cart extends Component {
                                 delete={this.onDeleteData}
                             />
                         </div>
-                        <div className="col-md-4 col-sm-12 mt-4 animate">
+                        <div className="col-md-4 col-sm-12 mt-3 animate">
                             <div className=" m-auto pb-1 dash"></div>
                             <div className="mt-5 space"></div>
                             <OrderSummary total={this.totalSum()} />
