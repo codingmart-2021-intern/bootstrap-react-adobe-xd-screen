@@ -2,48 +2,17 @@ import { useLocation } from "react-router-dom"
 import { allProductsList } from '../../../services/ProductDataList'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Cart from "../../cart/catrt";
 
 import './ProductView.css'
-
-let cartProduct = {}
-
 const ProductView = () => {
 
-    const [cartItem, setCartItem] = useState({
-        id: "",
-        title: "",
-        qty: "",
-        price: "",
-        img: ""
-    })
-
-
-    const addCartProduct = () => {
-        cartProduct = {
-            id: productData.product_id,
-            title: productData.product_title,
-            qty: productData.quantity[0],
-            actual_price: productData.actual_price,
-            current_price: productData.current_price,
-            img: imageUrl.img
-        }
-        setCartItem(cartProduct)
-        console.log(cartProduct)
-        { <Cart cartProduct={cartItem} /> }
-    }
-
-
     const pathname = useLocation().pathname.split("/")[2]
-
     const productData = getProductData()
-
     function getProductData() {
         let ans = allProductsList.filter((data, index) => data.product_id == pathname)
         return ans[0]
     }
     let Specifications = ""
-
 
     const [imageUrl, setImageUrl] = useState(productData.slider_image[0])
     const changeImage = (src, id) => {
@@ -111,15 +80,15 @@ const ProductView = () => {
     return (
         <div className="w-90 mx-auto">
             <div className="d-flex gap-2">
-                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to="/all-products"> Flowers </Link> / </span>
+                <span className=""><Link className=" hover:text-skin_dark " to="/">Home </Link> / <Link className=" hover:text-skin_dark " to="/flowers"> Flowers </Link> / </span>
                 <span className=""><Link className=" text-skin_dark " to={useLocation().pathname}>{productData.product_title}</Link></span>
             </div>
             <div className="d-flex flex-column flex-sm-row jusitfy-content-between align-items-start my-4">
-                <div className="position-relative">
+                <div className="position-relative d-flex align-items-center justify-content-center">
                     <img className="h-28 w-24 " src={imageUrl.img} alt={productData.product_title} />
                     {productData.stock == 0 &&
-                        <div className="bg-white position-absolute top-0 d-flex justify-content-center align-items-center">
-                            <button className="text-skin_dark">OUT OF STOCK</button>
+                        <div className="w-100 h-100 bg-white-5 position-absolute top-0 d-flex justify-content-center align-items-center">
+                            <button className="py-2 px-4 bg-footer_gray text-skin_dark">OUT OF STOCK</button>
                         </div>
                     }
                 </div>
@@ -148,7 +117,7 @@ const ProductView = () => {
                     </div>
                     {productData.stock > 0
                         && <div className="d-flex gap-2">
-                            <button className="btn btn-outline-secondary" onClick={addCartProduct}>ADD TO CART</button>
+                            <button className="btn btn-outline-secondary">ADD TO CART</button>
                             <button className="btn btn-primary">BUY NOW</button>
                         </div>
                     }
@@ -156,19 +125,19 @@ const ProductView = () => {
             </div>
             <div className="w-24">
                 <div className="position-relative">
-                    <div className="pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50" onClick={() => slideChange(-1)}>
+                    <div className="z-index-10 pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50" onClick={() => slideChange(-1)}>
                         <i className='bx bxs-chevron-left fs-3' ></i>
                     </div>
                     <div className="d-flex">
                         {productData.slider_image.map((data) => {
                             return <img
                                 key={data.id}
-                                className={`mx-2 w-4 h-5 object-cover pointer-event ${imageUrl.id === data.id ? "" : ""} `} src={data.img}
+                                className={`mx-2 w-4 h-5 object-cover pointer-event ${imageUrl.id === data.id ? "opacity-10" : "opacity-5"} `} src={data.img}
                                 alt=""
                                 onClick={() => changeImage(data.img, data.id)} />
                         })}
                     </div>
-                    <div className="pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50 start-100" onClick={() => slideChange(1)}>
+                    <div className="z-index-10 pointer-event bg-skin_dark fs-1 d-flex justify-content-center align-iems-center rounded-circle text-white position-absolute top-50 start-100" onClick={() => slideChange(1)}>
                         <i className='bx bxs-chevron-right fs-3' ></i>
                     </div>
                 </div>
@@ -176,8 +145,5 @@ const ProductView = () => {
         </div>
     )
 }
-
-// module.exports = { cartProduct }
-
 
 export default ProductView;

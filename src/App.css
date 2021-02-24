@@ -1,14 +1,21 @@
-.about-p{
-    font-size: 15px;
+.about-p {
+  font-size: 15px;
 }
-@media(max-width:500px){
-    .about-p{
-        font-size: 12px;
-    }
+@media (max-width: 500px) {
+  .about-p {
+    font-size: 12px;
+  }
 }
 
-@media(max-width:768px) {
-    .about{
-        padding: 5rem;
-    }
+@media (max-width: 768px) {
+  .about {
+    padding: 5rem;
+  }
+}
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+.fs-8 {
+  font-size: 0.35rem !important;
 }

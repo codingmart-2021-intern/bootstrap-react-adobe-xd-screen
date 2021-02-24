@@ -8,10 +8,11 @@ import Footer from "./components/Footer/Footer";
 import ProductDetail from "./views/ProductDetails"
 import Flowers from "./views/Flowers"
 import Cart from "./components/cart/catrt";
-import Home from "./components/home/home";
+// import Home from "./components/home/home";
 import About from "./views/about";
 import Privacy from "./views/privacy";
 
+import home from "./views/Home";
 
 import './App.css';
 
@@ -20,7 +21,7 @@ const App = () => {
     <Router>
       <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={home} />
         <Route path="/products"  component={Products} />
         <Route path="/flowers"  component={Flowers} />
         <Route path="/flowers/*"  component={ProductDetail} />
