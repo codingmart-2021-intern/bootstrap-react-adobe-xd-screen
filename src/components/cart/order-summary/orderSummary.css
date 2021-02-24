@@ -1,0 +1,27 @@
+.coupon{
+    border-radius: 10px;
+    border: 2px dashed #E2886C;
+    color: #E2886C;
+    
+}
+
+.focus{
+    outline: none;
+}
+
+.coupon-code {
+    font-size: 12px;
+    top: 23px;
+    left: 135px;
+    z-index: 500;
+}
+
+@media(min-width:700px) {
+    .coupon-text{
+        font-size: 15px;
+    }
+    .coupon{
+        font-size: 15px;
+    }
+}
+

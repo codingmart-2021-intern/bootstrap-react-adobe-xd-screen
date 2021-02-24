@@ -1,6 +1,5 @@
-import { Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./HeaderTop.css";
+import { Row, Col } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const HeaderTop = () => {
   return (
@@ -11,9 +10,10 @@ const HeaderTop = () => {
         <form className="">
           <div className="input-group">
             <input
-              type="text"
-              className="dark-pink w-100 h-2 border-0 shadow-none rounded-3  px-4 py-4 header-search"
-              placeholder="Search anything"
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
             />
             <span
               className="input-group-append position-absolute"
@@ -84,8 +84,8 @@ const HeaderTop = () => {
               </svg>
             </button>
           </Link>
-        </div>
-      </Col>
+          </div>
+        </Col>
       {/* ----- End Icons ----- */}
     </Row>
   );
