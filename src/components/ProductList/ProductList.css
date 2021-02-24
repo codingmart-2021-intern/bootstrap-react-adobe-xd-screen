@@ -1,0 +1,11 @@
+.w-15 {
+    width: 15rem !important;
+}
+
+.h-15 {
+    height: 15rem;
+}
+
+.products-container a:hover{
+    text-decoration: none !important;
+} 

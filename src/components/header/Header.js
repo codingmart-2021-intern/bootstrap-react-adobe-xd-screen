@@ -5,7 +5,9 @@ import Navbar from "./navbar/Navbar";
 import MobileViewHeader from "./mobileViewHeader/MobileViewHeader";
 
 class Header extends Component {
+
   constructor(props) {
+
     super(props);
     this.state = {
       sideBarToggleState: false,
@@ -14,7 +16,9 @@ class Header extends Component {
     this.SideBarToggel = this.SideBarToggel.bind(this);
   }
 
+  // Toggle function mobile view side bar
   SideBarToggel() {
+
     this.setState((preState) => {
       return { sideBarToggleState: !preState.sideBarToggleState };
     });
@@ -23,21 +27,25 @@ class Header extends Component {
   render() {
     return (
       <div className="light-pink p-0 m-0">
+        {/* ----- Start Header in Desktop view ----- */}
         <div className="desktop-view-header">
           <div className="w-90 mx-auto">
             <HeaderTop />
           </div>
-          <hr></hr>
+          <hr className="hr-dark-pink" ></hr>
           <div className="w-90 mx-auto">
             <Navbar />
           </div>
         </div>
+        {/* ----- End Header in Desktop view ----- */}
+        {/* ----- Start Header in Mobile view ----- */}
         <div className="mobile-view-header">
           <MobileViewHeader
             sideBarToggle={this.SideBarToggel}
             sideBarToggleState={this.state.sideBarToggleState}
           />
         </div>
+        {/* ----- End Header in Mobile view ----- */}
       </div>
     );
   }

@@ -13,12 +13,15 @@ class SideBar extends Component {
     };
   }
   render() {
+    // Sidebar toggle className
     let sideBar = "side-bar";
     if (this.props.show) {
       sideBar = "side-bar open light-pink";
     }
+
     return (
       <div className={sideBar}>
+        {/* ----- Start Sidebar Logo and cancel section ----- */}
         <div className="d-flex justify-content-between mb-4">
           <h2>LOGO</h2>
           <button
@@ -28,11 +31,14 @@ class SideBar extends Component {
             <img src="assets/cross-sign.svg" />
           </button>
         </div>
-        <Link className="text-decoration-none" style={{ color: "black" }}>
+        {/* ----- End Sidebar Logo and cancel section ----- */}
+        {/* ----- Start Sidebar Nav Links ----- */}
+        <Link to="/" className="text-decoration-none" style={{ color: "black" }}>
           <div className="py-2">
             <h5 className="fw-bold">Home</h5>
           </div>
         </Link>
+        {/* ----- Start Shopmenu Dropdown ----- */}
         <div className="mobile-shop-menu">
           <div className="d-flex justify-content-between py-2">
             <h5 className="fw-bold">Shop</h5>
@@ -49,6 +55,7 @@ class SideBar extends Component {
               </svg>
             </button>
           </div>
+          {/* Nested Dropdown */}
           <div className="mobile-dropdown-shop-menu">
             <div className="mobile-nested-shop-menu">
               <div className="d-flex justify-content-between py-2">
@@ -68,6 +75,7 @@ class SideBar extends Component {
               </div>
               <div className="mobile-nested-dropdown-shop-menu">
                 <Link
+                  to="/flowers"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -76,6 +84,7 @@ class SideBar extends Component {
                   </div>
                 </Link>
                 <Link
+                  to="#"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -103,6 +112,7 @@ class SideBar extends Component {
               </div>
               <div className="mobile-nested-dropdown-shop-menu">
                 <Link
+                  to="/flowers"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -111,6 +121,7 @@ class SideBar extends Component {
                   </div>
                 </Link>
                 <Link
+                  to="#"
                   className="text-decoration-none"
                   style={{ color: "black" }}
                 >
@@ -130,7 +141,11 @@ class SideBar extends Component {
                 <h6>Teddy</h6>
               </div>
             </Link>
-            <Link className="text-decoration-none" style={{ color: "black" }}>
+            <Link
+              to="/flowers"
+              className="text-decoration-none"
+              style={{ color: "black" }}
+            >
               <div className="py-2">
                 <h6>Flower</h6>
               </div>
@@ -152,6 +167,8 @@ class SideBar extends Component {
             </Link>
           </div>
         </div>
+        {/* ----- End Shopmenu Dropdown ----- */}
+        {/* ----- Start Profile Dropdown ----- */}
         <div className="mobile-shop-menu">
           <div className="d-flex justify-content-between py-2">
             <h5 className="fw-bold">Profile</h5>
@@ -168,6 +185,7 @@ class SideBar extends Component {
               </svg>
             </button>
           </div>
+          {/* Nested Dropdown */}
           <div className="mobile-dropdown-shop-menu">
             <div className="mobile-nested-shop-menu">
               <div className="d-flex justify-content-between py-2">
@@ -239,12 +257,34 @@ class SideBar extends Component {
             </div>
           </div>
         </div>
-        <div className="py-2">
-          <h5 className="fw-bold">About</h5>
-        </div>
-        <div className="py-2">
-          <h5 className="fw-bold">Contact</h5>
-        </div>
+        {/* ----- End Profile Dropdown ----- */}
+        <Link
+          to="/about"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">About</h5>
+          </div>
+        </Link>
+        <Link
+          to="/contact"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">Contact</h5>
+          </div>
+        </Link>
+        <Link
+          to="/privacy"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">Privacy</h5>
+          </div>
+        </Link>
         <div className="py-2">
           <h5 className="fw-bold" 
           onClick={()=>{

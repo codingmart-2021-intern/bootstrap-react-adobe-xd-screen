@@ -4,9 +4,10 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
+    // Nav link section
     <Row className="px-0 pt-2 justify-content-md-center nav-row">
       <Col className="d-flex flex-column justify-content-center p-0 m-0">
-        <Link to="#" className="d-flex w-100 text-decoration-none">
+        <Link to="/" className="d-flex w-100 text-decoration-none">
           <div
             className="mx-auto align-items-center"
             style={{ color: "black" }}
@@ -34,18 +35,22 @@ const Navbar = () => {
                 viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                 />
               </svg>
             </a>
+            {/* ----- Start Shop mega menu drop down ----- */}
             <div className="dropdown-shop-menu container-fluid text-left light-pink">
               <Row>
+                {/* ----- Start Mega List Column ----- */}
                 <Col>
+                  {/* ----- Start Mega Row 1 ----- */}
                   <Row>
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -58,7 +63,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -75,6 +80,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -87,7 +93,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -116,6 +122,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -128,7 +135,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -145,6 +152,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -157,7 +165,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -186,6 +194,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -198,7 +207,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -215,6 +224,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -227,7 +237,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -256,6 +266,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -268,7 +279,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -285,6 +296,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -297,7 +309,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -324,10 +336,13 @@ const Navbar = () => {
                       </div>
                     </Col>
                   </Row>
+                  {/* ----- End Mega Row 1 ----- */}
+                  {/* ----- Start Mega Row 2 ----- */}
                   <Row>
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -340,7 +355,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -357,6 +372,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -369,7 +385,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -398,6 +414,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -410,7 +427,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -427,6 +444,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -439,7 +457,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -468,6 +486,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -480,7 +499,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -497,6 +516,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -509,7 +529,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -538,6 +558,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -550,7 +571,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -567,6 +588,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -579,7 +601,7 @@ const Navbar = () => {
                               viewBox="0 0 16 16"
                             >
                               <path
-                                fill-rule="evenodd"
+                                fillRule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                               />
                             </svg>
@@ -606,7 +628,10 @@ const Navbar = () => {
                       </div>
                     </Col>
                   </Row>
+                  {/* ----- End Mega Row 2 ----- */}
                 </Col>
+                {/* ----- End Mega List Column ----- */}
+                {/* ----- Start Mega Images Column ----- */}
                 <Col md="auto">
                   <Row className="p-1">
                     <Col>
@@ -619,72 +644,74 @@ const Navbar = () => {
                     </Col>
                   </Row>
                 </Col>
+                {/* ----- End Mega Images Column ----- */}
               </Row>
             </div>
+            {/* ----- End Shop mega menu drop down ----- */}
           </div>
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/flowers"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Flowers</a>
+          Flowers
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/cakes"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Cakes</a>
+          Cakes
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="chocolates"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Chocolates</a>
+          Chocolates
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="teddies"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Teddy</a>
+          Teddy
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/about"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Occassions</a>
+          About
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/privacy"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Relations</a>
+          Privacy
         </Link>
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="#"
+          to="/contact"
           className="text-decoration-none"
           style={{ color: "black" }}
         >
-          <a>Combos</a>
+          Contact
         </Link>
       </Col>
     </Row>
