@@ -1,0 +1,40 @@
+/* Navbar Items Dropdown hover and transform */
+
+.nav-row > .col {
+  cursor: pointer;
+}
+
+.dropdown-shop-menu {
+  left: 0;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding: 3rem 5.5rem !important;
+}
+
+.shop-menu:hover > .dropdown-shop-menu {
+  display: block;
+  height: auto;
+  cursor: alias;
+}
+
+.shop-menu:hover ~ svg {
+  transform: rotateZ(180deg);
+}
+
+.dropdown-list-item {
+  cursor: pointer;
+}
+
+.dropdown-list-item:hover svg {
+  transform: rotateZ(180deg);
+}
+
+.nested-dropdown {
+  display: none;
+}
+
+.dropdown-list-item:hover .nested-dropdown {
+  display: block;
+}
