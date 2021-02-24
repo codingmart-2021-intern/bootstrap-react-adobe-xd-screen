@@ -18,7 +18,6 @@ class Header extends Component {
     this.setState((preState) => {
       return { sideBarToggleState: !preState.sideBarToggleState };
     });
-    console.log(this.state.sideBarToggleState);
   }
 
   render() {
