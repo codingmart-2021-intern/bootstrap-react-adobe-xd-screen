@@ -30,7 +30,7 @@ const Footer = () => {
                             <ul className="list-unstyled text-small d-flex flex-column gap-2">
                                 <li><Link to="/about" className="text-white" >About us</Link></li>
                                 <li><Link to="/contact" className="text-white" >Contact us</Link></li>
-                                <li><a className="text-white" href="#">FAQ's</a></li>
+                                <li><Link to="/faq" className="text-white" >FAQ's</Link></li>
                             </ul>
                         </div>
                         <div className="col">
