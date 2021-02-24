@@ -11,9 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .light-pink{
-  background-color:#FFF3EB;
+  background-color:#FFF3EB !important;
 }
 .dark-pink{
-  background-color:#F9DED1;
+  background-color:#F9DED1 !important;
+}
+
+.text-dark-pink{
+  color:#F9DED1 !important;
+}
+
+.text-light-pink{
+  color:#FFF3EB !important;
+}
+
+.text-light-brown{
+  color: #E2886C;
+}
+
+.border-pink{
+  border: 2px solid #E2886C!important
+}
+
+.w-90{
+  width: 90%;
+}
+
+.backdrop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.hr-dark-pink{
+
+  color: #E2886C;
 }

@@ -1,0 +1,113 @@
+/* Filter bar hover and transform style */
+.filter-side-bar {
+  height: 100%;
+  background-color: white;
+  box-shadow: 1px 0 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1rem 11rem 1rem;
+  border-radius: 20px;
+  max-width: 500px;
+  z-index: 20000;
+  transform: translateY(110%);
+  transition: transform 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.filter-side-bar.open {
+  transform: translateY(0);
+}
+
+/* Top nudge in mobile view filter */
+.topnudge {
+  display: flex;
+  position: fixed;
+  width: 50px;
+  padding: 2px;
+  left: 43%;
+  top: 10px;
+  background-color: #dddddd;
+}
+
+/* The lable-container */
+.lable-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.lable-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 1px;
+  background-color: white;
+  border: 1px solid #e2886c;
+}
+
+/* When the checkbox is checked, add a blue background */
+.lable-container input:checked ~ .checkmark {
+  background-color: #e2886c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.lable-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.lable-container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 8px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 500px) {
+  .topnudge {
+    display: none;
+  }
+  .filter-side-bar {
+    top: 0;
+    border-radius: 0;
+    transform: translateX(-110%);
+  }
+
+  .filter-side-bar.open {
+    transform: translateX(0);
+  }
+}
