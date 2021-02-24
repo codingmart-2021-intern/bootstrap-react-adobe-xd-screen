@@ -50,9 +50,9 @@ const Features = () => {
                                         }
                                     </div>
                                     <div className="px-3 py-1 d-flex flex-column gap-2 bg-skin_light text-dark">
-                                        <span>{productData.product_title}</span>
+                                        <span className="fw-bold fs-6">{productData.product_title}</span>
                                         <div className="d-flex gap-2">
-                                            <span className="fw-bold fs-7"> &#8377; {productData.current_price}</span>
+                                            <span className="fs-7"> &#8377; {productData.current_price}</span>
                                             <span className="fs-7 text-decoration-line-through"> &#8377; {productData.actual_price}</span>
                                         </div>
                                     </div>

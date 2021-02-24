@@ -5,3 +5,7 @@
 .fs-8 {
     font-size: 0.35rem !important;
 }
+
+.object-cover {
+    object-fit: cover;
+}
