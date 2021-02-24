@@ -1,8 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import LoginScreen from "../../../LoginScreen/LoginScreen";
+import TrackOrder from "../../../TrackOrder/TrackOrder";
 import "./SideBar.css";
 
 class SideBar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      login: false,
+      trackOrder: false
+    };
+  }
   render() {
     let sideBar = "side-bar";
     if (this.props.show) {
@@ -237,11 +246,29 @@ class SideBar extends Component {
           <h5 className="fw-bold">Contact</h5>
         </div>
         <div className="py-2">
-          <h5 className="fw-bold">Track order</h5>
+          <h5 className="fw-bold" 
+          onClick={()=>{
+            this.setState({
+            trackOrder: true
+            }
+            )
+          }}
+          >
+            Track order
+          </h5>
         </div>
         <div className="py-2">
-          <h5 className="fw-bold">Log out</h5>
+          <h5 className="fw-bold" 
+          onClick={()=>{
+            this.setState({
+            login: true
+            })
+          }}>
+            Log out
+          </h5>
         </div>
+        {(this.state.login)?<LoginScreen showBlock={this.state.login} onClick={() => this.setState({login: false})}/>:''}
+        {(this.state.trackOrder)?<TrackOrder showBlock={this.state.trackOrder} onClick={() => this.setState({trackOrder: false})}/>:''}
       </div>
     );
   }
