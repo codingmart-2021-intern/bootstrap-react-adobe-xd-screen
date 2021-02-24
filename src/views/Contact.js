@@ -19,7 +19,7 @@ const Contact = () => {
                 <form class="d-flex flex-column gap-4">
                     <input placeholder="Full Name *" class="form-control" />
                     <input placeholder="Email *" class="form-control" />
-                    <textarea class="form-control"> Message</textarea>
+                    <textarea class="form-control" rows="5"> Message</textarea>
                     <button class="btn btn-danger align-self-start">Submit</button>
                 </form>
             </div>
