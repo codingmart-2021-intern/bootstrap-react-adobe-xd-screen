@@ -14,7 +14,7 @@ const allProductsList = [
         "slider_image": [
             {
                 id: 0,
-                img: "/assets/images/rose_bucket.jpeg"
+                img: "https://images.pexels.com/photos/2232567/pexels-photo-2232567.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             },
             {
                 id: 1,

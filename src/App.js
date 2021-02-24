@@ -21,12 +21,12 @@ const App = () => {
       <Header />
       <Switch>
         <Route path="/" exact component={home} />
-        <Route path="/products"  component={Products} />
-        <Route path="/flowers"  component={Flowers} />
-        <Route path="/flowers/*"  component={ProductDetail} />
-        <Route path="/cart"  component={Cart} />
-        <Route path="/about"  component={About} />
-        <Route path="/privacy"  component={Privacy} />
+        <Route path="/products" exact component={Products} />
+        <Route path="/flowers" exact component={Flowers} />
+        <Route path="/flowers/*" exact component={ProductDetail} />
+        <Route path="/cart" exact component={Cart} />
+        <Route path="/about" exact  component={About} />
+        <Route path="/privacy" exact component={Privacy} />
       </Switch>
       <Footer />
     </Router>
