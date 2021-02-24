@@ -1,5 +1,5 @@
 import React from "react";
-import Feature from "../components/home/featured_product/feature";
+import Feature from "../components/home/Features/Features";
 
 
 

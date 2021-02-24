@@ -55,7 +55,7 @@ const AllFlowers = () => {
                         <Link className="col" to={"/flowers/" + productData.product_id}>
                             <div className="w-15" key={productData.product_id}>
                                 <div className="position-relative">
-                                    <img className="w-15 h-15" src={productData.slider_image[0].img} alt={productData.product_title} />
+                                    <img className="w-15 h-15 object-cover" src={productData.slider_image[0].img} alt={productData.product_title} />
                                     {productData.stock == 0 &&
                                         <div className="w-100 h-100 bg-white-5 position-absolute top-0 d-flex justify-content-center align-items-center">
                                             <button className="py-2 px-4 bg-footer_gray text-skin_dark">OUT OF STOCK</button>

@@ -11,7 +11,6 @@ import Cart from "./components/cart/catrt";
 // import Home from "./components/home/home";
 import About from "./views/about";
 import Privacy from "./views/privacy";
-
 import home from "./views/Home";
 
 import './App.css';
