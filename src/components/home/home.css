@@ -1,6 +1,4 @@
-div{
-    font-family: serif;
-}
+
 .home-top{
     background-color: #FFF3EB;
 }
@@ -40,27 +38,9 @@ div{
     
 }
 
-/* 
 
-
-@media(min-width:700px) {
-    
-    .view{
-        position: absolute;
-        top: 5rem;
-        border-radius: 10px;
-        left: 0rem;
-        font-size: 10px;
+@media(max-width:768px) {
+    .home{
+        padding: 7rem;
     }
 }
-
-@media(min-width:500px) {
-    
-    .view{
-        position: absolute;
-        top: 15rem;
-        border-radius: 10px;
-        left: -2rem;
-        font-size: 10px;
-    }
-} */
