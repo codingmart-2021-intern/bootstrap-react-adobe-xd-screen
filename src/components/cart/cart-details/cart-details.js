@@ -9,7 +9,7 @@ const CartDetails = (props) => {
 
             {   props.products.map((item, i) => {
 
-                return <div key={i} className="row border px-1 py-4 cart-item rounded mb-4">
+                return <div key={i} className="row  px-1 py-4 cart-item rounded mb-4" style={{border:"1px solid #FFF3EB"}}>
                     <div className="col-2 col-sm-2 col-md-2">
                         <img width="90px" className="img-fluid" src={item.img} />
                     </div>

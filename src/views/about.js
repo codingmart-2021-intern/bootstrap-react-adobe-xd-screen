@@ -64,7 +64,6 @@ const About = () => {
 
             </div>
            
-           
             <div className="mb-3"></div>
         </div>
     )

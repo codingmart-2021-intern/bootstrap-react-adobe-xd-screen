@@ -2,18 +2,20 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 // COMPONENTS & PAGES IMPORT
+import './App.css';
 import Products from "./views/Products";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer/Footer";
 import ProductDetail from "./views/ProductDetails"
 import Flowers from "./views/Flowers"
 import Cart from "./components/cart/catrt";
-// import Home from "./components/home/home";
 import About from "./views/about";
 import Privacy from "./views/privacy";
 import home from "./views/Home";
+import FAQs from "./views/faqs";
 
-import './App.css';
+
+
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
         <Route path="/cart" exact component={Cart} />
         <Route path="/about" exact  component={About} />
         <Route path="/privacy" exact component={Privacy} />
+        <Route path="/faq" exact component={FAQs} />
       </Switch>
       <Footer />
     </Router>
