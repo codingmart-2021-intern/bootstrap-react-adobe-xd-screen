@@ -4,6 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
+    // Nav link section
     <Row className="px-0 pt-2 justify-content-md-center nav-row">
       <Col className="d-flex flex-column justify-content-center p-0 m-0">
         <Link to="#" className="d-flex w-100 text-decoration-none">
@@ -39,13 +40,17 @@ const Navbar = () => {
                 />
               </svg>
             </a>
+            {/* ----- Start Shop mega menu drop down ----- */}
             <div className="dropdown-shop-menu container-fluid text-left light-pink">
               <Row>
+                {/* ----- Start Mega List Column ----- */}
                 <Col>
+                  {/* ----- Start Mega Row 1 ----- */}
                   <Row>
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -75,6 +80,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -116,6 +122,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -145,6 +152,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -186,6 +194,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -215,6 +224,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -256,6 +266,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -285,6 +296,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -324,10 +336,13 @@ const Navbar = () => {
                       </div>
                     </Col>
                   </Row>
+                  {/* ----- End Mega Row 1 ----- */}
+                  {/* ----- Start Mega Row 2 ----- */}
                   <Row>
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -357,6 +372,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -398,6 +414,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -427,6 +444,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -468,6 +486,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -497,6 +516,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -538,6 +558,7 @@ const Navbar = () => {
                     <Col>
                       <div className="p-2">
                         <h4 className="fw-bold">Flowers</h4>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Hurricane{" "}
@@ -567,6 +588,7 @@ const Navbar = () => {
                         <div className="py-2 dropdown-list-item">
                           <a>Lanters</a>
                         </div>
+                        {/* Nested Dropdown */}
                         <div className="py-2 dropdown-list-item">
                           <a>
                             Decorative Vases{" "}
@@ -606,7 +628,10 @@ const Navbar = () => {
                       </div>
                     </Col>
                   </Row>
+                  {/* ----- End Mega Row 2 ----- */}
                 </Col>
+                {/* ----- End Mega List Column ----- */}
+                {/* ----- Start Mega Images Column ----- */}
                 <Col md="auto">
                   <Row className="p-1">
                     <Col>
@@ -619,8 +644,10 @@ const Navbar = () => {
                     </Col>
                   </Row>
                 </Col>
+                {/* ----- End Mega Images Column ----- */}
               </Row>
             </div>
+            {/* ----- End Shop mega menu drop down ----- */}
           </div>
         </Link>
       </Col>

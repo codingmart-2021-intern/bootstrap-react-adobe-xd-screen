@@ -2,17 +2,33 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import SideBar from "./sideBar/SideBar";
+import HeaderBackDrop from "./header-back-drop/HeaderBackDrop";
 
 class MobileViewHeader extends Component {
+
   render() {
+
+    // Backdrop of sidebar
+    let headerBackDrop;
+    if (this.props.sideBarToggleState) {
+      headerBackDrop = <HeaderBackDrop sideBarToggle={this.props.sideBarToggle} />;
+    }
+
     return (
+      // Mobile view side bar contents
       <div className="container p-4">
+        {/* ----- Start Sidebar with nav items ----- */}
         <SideBar
           show={this.props.sideBarToggleState}
           sideBarToggle={this.props.sideBarToggle}
         />
+        {/* ----- End Sidebar with nav items ----- */}
+        {/* ----- Start Backdrop ----- */}
+        {headerBackDrop}
+        {/* ----- End Backdrop ----- */}
         <Row>
           <Col>
+            {/* Toggle bar */}
             <button className="btn shadow-none">
               <img
                 src="/assets/11008563111574330929.svg"
@@ -21,9 +37,11 @@ class MobileViewHeader extends Component {
             </button>
           </Col>
           <Col className="text-center align-baseline">
+            {/* Logo */}
             <h2>LOGO</h2>
           </Col>
           <Col>
+            {/* Cart icon */}
             <div className="d-flex justify-content-end">
               <Link to="#">
                 <button className="dark-pink btn shadow-none rounded-circle">
@@ -42,6 +60,7 @@ class MobileViewHeader extends Component {
             </div>
           </Col>
         </Row>
+        {/* Search bar */}
         <Row>
           <Col className="pt-2">
             <form className="">

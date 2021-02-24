@@ -4,7 +4,9 @@ import "./HeaderTop.css";
 
 const HeaderTop = () => {
   return (
+    // Header Top section
     <Row className="pt-3">
+      {/* ----- Start Searchbar ----- */}
       <Col className="align-self-center">
         <form className="">
           <div className="input-group">
@@ -31,9 +33,13 @@ const HeaderTop = () => {
           </div>
         </form>
       </Col>
+      {/* ----- End Searchbar ----- */}
+      {/* ----- Start Logo ----- */}
       <Col className="align-self-center text-center">
         <h2>LOGO</h2>
       </Col>
+      {/* ----- End Logo ----- */}
+      {/* ----- Start Icons ----- */}
       <Col className="">
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
           <Link to="#">
@@ -80,6 +86,7 @@ const HeaderTop = () => {
           </Link>
         </div>
       </Col>
+      {/* ----- End Icons ----- */}
     </Row>
   );
 };
