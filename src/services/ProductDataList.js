@@ -628,7 +628,7 @@ const allProductsList = {
     "teddies": [
         {
     
-            "product_title": "Pretty Pink Rose Basket Made from Bengal Bamboo",
+            "product_title": "Cuddles",
             "actual_price": 8475,
             "current_price": 3645,
             "colors": ["red", "orange", "blue"],
@@ -660,7 +660,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Bengal Bamboo",
+            "product_title": "Bella",
             "actual_price": 6785,
             "current_price": 2635,
             "colors": ["red", "orange", "blue"],
@@ -692,7 +692,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "asdf asgije erndfgn",
+            "product_title": "Buttercup",
             "actual_price": 7649,
             "current_price": 2849,
             "colors": ["red", "orange", "blue"],
@@ -724,7 +724,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Daisy",
+            "product_title": "Fuzzy Wuzzy",
             "actual_price": 7095,
             "current_price": 4906,
             "colors": ["red", "orange", "blue"],
@@ -756,7 +756,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Rose",
+            "product_title": "Grizzlee",
             "actual_price": 3950,
             "current_price": 1035,
             "colors": ["red", "orange", "blue"],
@@ -789,7 +789,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Iris",
+            "product_title": "Claws",
             "actual_price": 8596,
             "current_price": 2035,
             "colors": ["red", "orange", "blue"],
@@ -822,7 +822,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Orchid",
+            "product_title": "Franklin",
             "actual_price": 6035,
             "current_price": 2845,
             "colors": ["red", "orange", "blue"],
@@ -855,7 +855,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Tulip",
+            "product_title": "Baloo",
             "actual_price": 6874,
             "current_price": 2086,
             "colors": ["red", "orange", "blue"],
@@ -888,7 +888,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Sun Flower",
+            "product_title": "Barley",
             "actual_price": 8573,
             "current_price": 2946,
             "colors": ["red", "orange", "blue"],
@@ -923,7 +923,7 @@ const allProductsList = {
     "cakes": [
         {
     
-            "product_title": "Pretty Pink Rose Basket Made from Bengal Bamboo",
+            "product_title": "Butter Cake",
             "actual_price": 8475,
             "current_price": 3645,
             "colors": ["red", "orange", "blue"],
@@ -955,7 +955,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Bengal Bamboo",
+            "product_title": "Pound Cake",
             "actual_price": 6785,
             "current_price": 2635,
             "colors": ["red", "orange", "blue"],
@@ -987,7 +987,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "asdf asgije erndfgn",
+            "product_title": "Sponge Cake",
             "actual_price": 7649,
             "current_price": 2849,
             "colors": ["red", "orange", "blue"],
@@ -1019,7 +1019,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Daisy",
+            "product_title": "Genoise Cake",
             "actual_price": 7095,
             "current_price": 4906,
             "colors": ["red", "orange", "blue"],
@@ -1051,7 +1051,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Rose",
+            "product_title": "Biscuit Cake",
             "actual_price": 3950,
             "current_price": 1035,
             "colors": ["red", "orange", "blue"],
@@ -1084,7 +1084,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Iris",
+            "product_title": "Angel Food Cake",
             "actual_price": 8596,
             "current_price": 2035,
             "colors": ["red", "orange", "blue"],
@@ -1117,7 +1117,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Orchid",
+            "product_title": "Chiffon Cake",
             "actual_price": 6035,
             "current_price": 2845,
             "colors": ["red", "orange", "blue"],
@@ -1150,7 +1150,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Tulip",
+            "product_title": "Baked Flourless Cake",
             "actual_price": 6874,
             "current_price": 2086,
             "colors": ["red", "orange", "blue"],
@@ -1183,7 +1183,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Sun Flower",
+            "product_title": "Unbaked Flourless Cake",
             "actual_price": 8573,
             "current_price": 2946,
             "colors": ["red", "orange", "blue"],
@@ -1216,7 +1216,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Sun Flower",
+            "product_title": "Carrot Cake",
             "actual_price": 8573,
             "current_price": 2946,
             "colors": ["red", "orange", "blue"],
@@ -1251,7 +1251,7 @@ const allProductsList = {
     "chocolates": [
         {
     
-            "product_title": "Pretty Pink Rose Basket Made from Bengal Bamboo",
+            "product_title": "Dairy Milk",
             "actual_price": 8475,
             "current_price": 3645,
             "colors": ["red", "orange", "blue"],
@@ -1283,7 +1283,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Bengal Bamboo",
+            "product_title": "Galaxy",
             "actual_price": 6785,
             "current_price": 2635,
             "colors": ["red", "orange", "blue"],
@@ -1315,7 +1315,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "asdf asgije erndfgn",
+            "product_title": "Snickers",
             "actual_price": 7649,
             "current_price": 2849,
             "colors": ["red", "orange", "blue"],
@@ -1347,7 +1347,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Daisy",
+            "product_title": "Dairy Milk Fruit and Nut",
             "actual_price": 7095,
             "current_price": 4906,
             "colors": ["red", "orange", "blue"],
@@ -1379,7 +1379,7 @@ const allProductsList = {
             ]
         },
         {
-            "product_title": "Rose",
+            "product_title": "Kit Kat",
             "actual_price": 3950,
             "current_price": 1035,
             "colors": ["red", "orange", "blue"],
@@ -1412,7 +1412,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Iris",
+            "product_title": "Wispa",
             "actual_price": 8596,
             "current_price": 2035,
             "colors": ["red", "orange", "blue"],
@@ -1445,7 +1445,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Orchid",
+            "product_title": "Crunchie",
             "actual_price": 6035,
             "current_price": 2845,
             "colors": ["red", "orange", "blue"],
@@ -1478,7 +1478,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Tulip",
+            "product_title": "Bounty",
             "actual_price": 6874,
             "current_price": 2086,
             "colors": ["red", "orange", "blue"],
@@ -1511,7 +1511,7 @@ const allProductsList = {
         },
         {
     
-            "product_title": "Sun Flower",
+            "product_title": "Terry’s Chocolate Orange",
             "actual_price": 8573,
             "current_price": 2946,
             "colors": ["red", "orange", "blue"],

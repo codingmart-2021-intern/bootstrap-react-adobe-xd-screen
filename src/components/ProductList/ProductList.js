@@ -54,7 +54,7 @@ const ProductList = () => {
             {/* <div className="text-center my-5">
                 <h5>Search Results for "<span className="text-skin_dark fw-bold">{`${inputValue}`}</span>"</h5>
             </div> */}
-            <div className="row gap-5 text-dark">
+            <div className="row gap-5 text-dark my-4">
                 {
                     productList.map(productData => (
                         <Link className="col" to={`/${category}/${productData.product_id}`}>
@@ -67,7 +67,7 @@ const ProductList = () => {
                                         </div>
                                     }
                                 </div>
-                                <div className="px-1 py-2 d-flex flex-column text-dark fw-bold">
+                                <div className="px-1 py-2 d-flex flex-column text-dark fw-bold bg-skin_thin">
                                     <span>{productData.product_title}</span>
                                     <div className="d-flex gap-2">
                                         <span className="font-normal fs-6"> &#8377; {productData.current_price}</span>
