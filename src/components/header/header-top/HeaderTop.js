@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import LoginScreen from "../../LoginScreen/LoginScreen";
+import TrackOrder from "../../TrackOrder/TrackOrder";
 import "./HeaderTop.css";
 
 const HeaderTop = () => {
+  const [trackOrder, setTrackOrder] = useState(false);
+  const [login, setLogin] = useState(false);
   return (
     // Header Top section
     <Row className="pt-3">
@@ -43,7 +48,11 @@ const HeaderTop = () => {
       <Col className="">
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
           <Link to="#">
-            <button className="btn btn-lg  dark-pink shadow-none rounded-circle">
+            <button className="btn btn-lg  dark-pink shadow-none rounded-circle"
+            onClick={()=>{
+              setTrackOrder(true)
+            }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -57,7 +66,10 @@ const HeaderTop = () => {
             </button>
           </Link>
           <Link to="#">
-            <button className="btn btn-lg dark-pink shadow-none rounded-circle">
+            <button className="btn btn-lg dark-pink shadow-none rounded-circle"
+            onClick={()=>{
+              setLogin(true)
+            }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -87,6 +99,8 @@ const HeaderTop = () => {
         </div>
       </Col>
       {/* ----- End Icons ----- */}
+        {(login)?<LoginScreen onClick={() => setLogin(false)}/>:''}
+        {(trackOrder)?<TrackOrder onClick={() => setTrackOrder(false)}/>:''}
     </Row>
   );
 };
