@@ -9,18 +9,18 @@ const LoginScreen = ({ onClick }) => {
         <div className="screen fixed-top h-100 zindex-modal" >
             <div className="inner-block pl-3 bg-white ">
                 <div className="d-flex justify-content-center w-100">
-                    <div className="close-btn">
-                        <span className="btn font-weight-bold" onClick={onClick} >
+                    <div>
+                        <span className="btn close-btn font-weight-bold" onClick={onClick} >
                             &#10005;
                         </span>
                     </div>
                     <div className="position-relative mt-4 w-100">
                         <nav className="d-flex space-x-5 font-lora h5 font-weight-bold ">
-                            <span className={login?"active ":""} onClick={()=>{
+                            <span className={login?"active ":""+' text-secondary'} onClick={()=>{
                                 setLogin(true)
                             }} 
                             >Logs in </span>
-                            <span className={!login?"active ":""} onClick={()=>{
+                            <span className={!login?"active ":""+' text-secondary'} onClick={()=>{
                                 setLogin(false)
                             }} 
                             > Register</span>

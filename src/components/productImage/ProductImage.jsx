@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import './productImage.scss';
 
-const ProductImage = ({img, notFound}) => {
-    const [error, setError] = useState(true)
+const ProductImage = ({ className,img, notFound }) => {
+    const [error, setError] = useState(false)
     return (
         <div>
-            <div className='productImage flex justify-center flex-wrap'>
-                <img src={img} className="w-screen p-10" alt="not" onError={(e)=>{
-                    if(error){
-                    setError(false);
+            <div className='productImage text-center'>
+                <img src={img} className="position-relative d-flex justify-content-center align-items-center" alt="not" onError={(e)=>{
+                    if(!error){
+                    setError(true);
                     e.target.src=notFound;
                     }
                 }}/>
-                {(!error)?<p className="font-weight-bold text-muted">No image found</p>:''}
+                {(error)?<p className="font-weight-bold text-muted">No image found</p>:''}
             </div>
         </div>
     )

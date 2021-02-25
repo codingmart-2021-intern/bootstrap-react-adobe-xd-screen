@@ -723,6 +723,15 @@ const Navbar = () => {
         </Link>
         {routePath == "contact" && <div class="border-pink bg-skin_dark  w-100 mt-3"></div>}
       </Col>
+      <Col className="text-center  p-0 m-0">
+        <Link
+          to="/event"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          Event
+        </Link>
+      </Col>
     </Row>
   );
 };
