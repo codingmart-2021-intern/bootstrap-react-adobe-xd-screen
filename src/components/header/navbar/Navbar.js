@@ -714,6 +714,15 @@ const Navbar = () => {
           Contact
         </Link>
       </Col>
+      <Col className="text-center  p-0 m-0">
+        <Link
+          to="/event"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          Event
+        </Link>
+      </Col>
     </Row>
   );
 };

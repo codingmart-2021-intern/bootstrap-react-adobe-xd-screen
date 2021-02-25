@@ -285,6 +285,15 @@ class SideBar extends Component {
             <h5 className="fw-bold">Privacy</h5>
           </div>
         </Link>
+        <Link
+          to="/event"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          <div className="py-2">
+            <h5 className="fw-bold">Event</h5>
+          </div>
+        </Link>
         <div className="py-2">
           <h5 className="fw-bold" 
           onClick={()=>{
