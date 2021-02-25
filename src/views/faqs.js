@@ -3,20 +3,22 @@ import React, { useState } from "react";
 const FAQs = () => {
 
     return (
-        <div>
+        <div >
+            <div className="pt-3" style={{backgroundColor:"#FFF3EB"}}>
+                <div className="row no-gutters" style={{ fontFamily: "serif" }}>
 
-            <div className="row no-gutters" style={{ fontFamily: "serif" }}>
+                    <div className="col-sm-12 col-md light-pink d-flex flex-column justify-content-center about px-5">
+                        <h2 className="text-capitalize h1">FAQs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratio amet consectetur adipisicing elit. Ratio amet consectetur adipisicing elit. Ratione fuga sunt quae nulla adipisci illum voluptatem labore!</p>
+                    </div>
 
-                <div className="col-sm-12 col-md light-pink d-flex flex-column justify-content-center about px-5">
-                    <h2 className="text-capitalize h1">FAQs</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratio amet consectetur adipisicing elit. Ratio amet consectetur adipisicing elit. Ratione fuga sunt quae nulla adipisci illum voluptatem labore!</p>
+                    <div className="col-sm-12 col-md">
+                        <img src="/assets/about.jpg" className="img-fluid" />
+                    </div>
+
                 </div>
-
-                <div className="col-sm-12 col-md">
-                    <img src="/assets/about.jpg" className="img-fluid" />
-                </div>
-
             </div>
+
 
             <div className="container">
                 <h2 className=" mt-4 mb-4 font-weight-bold h3" > What shipping methods are available ? </h2>
@@ -48,7 +50,7 @@ const FAQs = () => {
                 </p>
 
             </div>
-           
+
             <div className="mb-3"></div>
         </div>
     )
