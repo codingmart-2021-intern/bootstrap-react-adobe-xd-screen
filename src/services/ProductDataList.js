@@ -1542,6 +1542,41 @@ const allProductsList = {
                 }
             ]
         }
+    ],
+    "event": [
+        {
+    
+            "product_title": "Event",
+            "actual_price": 8475,
+            "current_price": 3645,
+            "colors": ["red", "orange", "blue"],
+            "sizes": ["small", "large"],
+            "quantity": [500],
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, perferendis eveniet? Nobis accusantium dolor, quam magnam excepturi quasi amet quae magni, optio odio ad maxime necessitatibus itaque",
+            "stock": 5,
+            "product_id": 1,
+            "slider_image": [
+                {
+                    id: 0,
+                    img: "/assets/event.png"
+                },
+                {
+                    id: 1,
+                    img: "https://images.pexels.com/photos/4478396/pexels-photo-4478396.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                }, {
+                    id: 2,
+                    img: "https://images.pexels.com/photos/4555279/pexels-photo-4555279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                },
+                {
+                    id: 3,
+                    img: "https://images.pexels.com/photos/4376217/pexels-photo-4376217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                },
+                {
+                    id: 4,
+                    img: "https://images.pexels.com/photos/4992663/pexels-photo-4992663.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                }
+            ]
+        }
     ]
 }
 

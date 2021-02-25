@@ -8,7 +8,7 @@ import '../ProductView/ProductView.css'
 const Event = () => {
 
     // const location = useLocation().pathname.split("/")
-    const category = 'flowers'
+    const category = 'event'
     const product_id = 1
     const productData = getProductData()
     function getProductData() {
@@ -18,7 +18,7 @@ const Event = () => {
     }
     let Specifications = ""
 
-    const [imageUrl, setImageUrl] = useState('/assets/event.png')
+    const [imageUrl, setImageUrl] = useState({img: '/assets/event.png', id: 1})
     const changeImage = (src, id) => {
         setImageUrl({ img: src, id: id })
     }
@@ -73,7 +73,7 @@ const Event = () => {
             </div>
             <div className="d-flex flex-column flex-sm-row jusitfy-content-between align-items-start my-4">
                 <div className="position-relative d-flex align-items-center justify-content-center">
-                    <img className="h-28 w-24 object-cover" src='/assets/event.png' alt={productData.product_title} />
+                    <img className="h-28 w-24 object-cover" src={imageUrl.img} alt={productData.product_title} />
                     {productData.stock == 0 &&
                         <div className="w-100 h-100 bg-white-5 position-absolute top-0 d-flex justify-content-center align-items-center">
                             <button className="py-2 px-4 bg-footer_gray text-skin_dark">OUT OF STOCK</button>

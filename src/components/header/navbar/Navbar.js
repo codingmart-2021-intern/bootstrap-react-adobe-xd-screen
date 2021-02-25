@@ -731,6 +731,7 @@ const Navbar = () => {
         >
           Event
         </Link>
+        {routePath == "event" && <div class="border-pink bg-skin_dark  w-100 mt-3"></div>}
       </Col>
     </Row>
   );
