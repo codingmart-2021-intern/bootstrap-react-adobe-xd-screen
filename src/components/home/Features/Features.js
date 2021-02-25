@@ -39,7 +39,7 @@ const Features = () => {
                 <div className="row">
                     {
                         productDataList.map(productData => (
-                            <Link className="card-c col" to={ "/flowers/" + productData.product_id }>
+                            <Link className="card-c col d-flex flex-column justify-content-center align-items-center m-2" to={ "/flowers/" + productData.product_id }>
                                 <div className="d-flex flex-column w-10" key={productData.product_id}>
                                     <div className="position-relative d-flex justify-content-center align-items-center ">
                                         <img className="w-10 h-12 object-cover" src={productData.slider_image[0].img} alt={productData.product_title} />
@@ -52,8 +52,8 @@ const Features = () => {
                                     <div className="px-3 py-1 d-flex flex-column gap-2 bg-skin_light text-dark">
                                         <span className="fw-bold fs-6">{productData.product_title}</span>
                                         <div className="d-flex gap-2">
-                                            <span className="fs-7"> &#8377; {productData.current_price}</span>
-                                            <span className="fs-7 text-decoration-line-through"> &#8377; {productData.actual_price}</span>
+                                            <span className="fw-bold fs-7"> &#8377; {productData.current_price}</span>
+                                            <span className="fw-bold fs-7 text-muted text-decoration-line-through"> &#8377; {productData.actual_price}</span>
                                         </div>
                                     </div>
                                 </div>

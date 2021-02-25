@@ -36,9 +36,9 @@ const ProductView = () => {
     if (productData.stock == 0) {
         Specifications = <h1 className="fs-3 text-danger">OUT OF STOCK</h1>
     } else {
-        Specifications = <div className="d-flex flex-column gap-3">
+        Specifications = <div className="d-flex flex-column gap-3 fs-6 fs-sm-4">
             <div className="row">
-                <h2 className="fw-bold fs-5 col">Color</h2>
+                <span className="fw-bold  col">Color</span>
                 <div className="d-flex col gap-2">
                     {
                         productData.colors.map((data, index) => {
@@ -52,7 +52,7 @@ const ProductView = () => {
                 </div>
             </div>
             <div className="row">
-                <h2 className="fw-bold fs-5 col">Size</h2>
+                <span className="fw-bold  col">Size</span>
                 <div className="d-flex gap-2 col">
                     {
                         productData.sizes.map((data, index) => {
@@ -66,13 +66,13 @@ const ProductView = () => {
                 </div>
             </div>
             <div className="row">
-                <h2 className="fw-bold fs-5 col">Quantity</h2>
+                <span className="fw-bold  col">Quantity</span>
                 <div className="d-flex gap-2 self-start col">
                     <button
                         className="px-6 py-2 border d-flex justify-content-center align-items-center gap-2"><span
                             className="font-medium text-skin_dark">
                             {"<"} </span>
-                        <h1 className="fs-5">{productData.quantity[0]}</h1> <span className="font-medium text-skin_dark"> {">"} </span>
+                        <span className="">{productData.quantity[0]}</span> <span className="font-medium text-skin_dark"> {">"} </span>
                     </button>
                 </div>
             </div>

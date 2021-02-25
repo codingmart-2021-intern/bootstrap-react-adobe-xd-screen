@@ -10,7 +10,7 @@ const ProductDetail = () => {
             <!-- Like it --> */}
             <div className="d-flex flex-column  flex-sm-row border border-black py-4 justify-content-center align-items-center my-5 gap-3 w-75 mx-auto">
                 <span >Like it? Share it!</span>
-                <div className="d-flex gap-3">
+                <div className="d-flex gap-1 gap-sm-3">
                     <img src="/assets/Group 18975.svg" alt="" srcSet="" />
                     <img src="/assets/Group 18976.svg" alt="" srcSet="" />
                     <img src="/assets/Group 18977.svg" alt="" srcSet="" />

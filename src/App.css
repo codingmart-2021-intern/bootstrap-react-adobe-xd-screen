@@ -168,3 +168,7 @@
 .h-1 {
     height: 1.5rem!important;
 }
+
+.z-10 {
+    z-index: 10;
+}

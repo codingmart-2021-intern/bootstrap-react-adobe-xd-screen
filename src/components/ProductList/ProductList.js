@@ -57,7 +57,7 @@ const ProductList = () => {
             <div className="row gap-5 text-dark my-4">
                 {
                     productList.map(productData => (
-                        <Link className="col" to={`/${category}/${productData.product_id}`}>
+                        <Link className="col d-flex flex-column justify-content-center align-items-center" to={`/${category}/${productData.product_id}`}>
                             <div className="w-15" key={productData.product_id}>
                                 <div className="position-relative">
                                     <img className="w-15 h-15 object-cover" src={productData.slider_image[0].img} alt={productData.product_title} />
@@ -67,7 +67,7 @@ const ProductList = () => {
                                         </div>
                                     }
                                 </div>
-                                <div className="px-1 py-2 d-flex flex-column text-dark fw-bold bg-skin_thin">
+                                <div className="p-2 d-flex flex-column text-dark fw-bold bg-skin_thin">
                                     <span>{productData.product_title}</span>
                                     <div className="d-flex gap-2">
                                         <span className="font-normal fs-6"> &#8377; {productData.current_price}</span>
