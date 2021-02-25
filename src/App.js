@@ -14,6 +14,7 @@ import FAQs from "./views/faqs";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
 import NotFound from "./components/notFound/NotFound";
+import EventDetails from "./views/EventDetails";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/faq" exact component={FAQs} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/notfound" exact component={NotFound} />
+        <Route path="/event" exact component={EventDetails} />
       </Switch>
       <Footer />
     </Router>
