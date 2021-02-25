@@ -1,8 +1,11 @@
 import { Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react-dom"
 import "./Navbar.css";
 
 const Navbar = () => {
+    const routePath = useLocation().pathname.split("/")[1]
+    console.log(routePath);
   return (
     // Nav link section
     <Row className="px-0 pt-2 justify-content-md-center nav-row">
@@ -13,7 +16,7 @@ const Navbar = () => {
             style={{ color: "black" }}
           >
             Home
-            <div className="dark-pink border-pink w-100 mt-3"></div>
+            {routePath == "" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
           </div>
         </Link>
       </Col>
@@ -659,6 +662,7 @@ const Navbar = () => {
         >
           Flowers
         </Link>
+        {routePath == "flowers" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
@@ -668,6 +672,7 @@ const Navbar = () => {
         >
           Cakes
         </Link>
+        {routePath == "cakes" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
@@ -677,6 +682,7 @@ const Navbar = () => {
         >
           Chocolates
         </Link>
+        {routePath == "chocolates" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
@@ -686,6 +692,7 @@ const Navbar = () => {
         >
           Teddy
         </Link>
+        {routePath == "teddies" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
@@ -695,6 +702,7 @@ const Navbar = () => {
         >
           About
         </Link>
+        {routePath == "about" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
@@ -704,6 +712,7 @@ const Navbar = () => {
         >
           Privacy
         </Link>
+        {routePath == "privacy" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
@@ -713,6 +722,7 @@ const Navbar = () => {
         >
           Contact
         </Link>
+        {routePath == "contact" && <div class="border-pink bg-skin_dark  w-100 mt-3"></div>}
       </Col>
     </Row>
   );
