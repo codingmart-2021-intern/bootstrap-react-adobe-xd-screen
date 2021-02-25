@@ -4,7 +4,7 @@ const FAQs = () => {
 
     return (
         <div >
-            <div className="pt-3" style={{backgroundColor:"#FFF3EB"}}>
+            <div className="pt-4" style={{backgroundColor:"#FFF3EB"}}>
                 <div className="row no-gutters" style={{ fontFamily: "serif" }}>
 
                     <div className="col-sm-12 col-md light-pink d-flex flex-column justify-content-center about px-5">
