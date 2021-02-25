@@ -9,16 +9,15 @@ const Navbar = () => {
   return (
     // Nav link section
     <Row className="px-0 pt-2 justify-content-md-center nav-row">
-      <Col className="d-flex flex-column justify-content-center p-0 m-0">
-        <Link to="/" className="d-flex w-100 text-decoration-none">
-          <div
-            className="mx-auto align-items-center"
-            style={{ color: "black" }}
-          >
-            Home
-            {routePath == "" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
-          </div>
+      <Col className="d-flex flex-column p-0 m-0">
+        <Link
+          to="/"
+          className="text-decoration-none"
+          style={{ color: "black" }}
+        >
+          Home
         </Link>
+        {routePath == "" && <div class="border-pink bg-skin_dark w-100 mt-3"></div>}
       </Col>
       <Col className="text-center p-0 m-0">
         <Link
