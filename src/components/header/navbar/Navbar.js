@@ -14,6 +14,7 @@ const Navbar = () => {
           to="/"
           className="text-decoration-none"
           style={{ color: "black" }}
+
         >
           Home
         </Link>
@@ -658,6 +659,7 @@ const Navbar = () => {
           to="/flowers"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Flowers
         </Link>
@@ -668,6 +670,7 @@ const Navbar = () => {
           to="/cakes"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Cakes
         </Link>
@@ -675,9 +678,10 @@ const Navbar = () => {
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="chocolates"
+          to="/chocolates"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Chocolates
         </Link>
@@ -685,9 +689,10 @@ const Navbar = () => {
       </Col>
       <Col className="text-center  p-0 m-0">
         <Link
-          to="teddies"
+          to="/teddies"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Teddy
         </Link>
@@ -698,6 +703,7 @@ const Navbar = () => {
           to="/about"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           About
         </Link>
@@ -708,6 +714,7 @@ const Navbar = () => {
           to="/privacy"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Privacy
         </Link>
@@ -718,6 +725,7 @@ const Navbar = () => {
           to="/contact"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Contact
         </Link>
@@ -728,6 +736,7 @@ const Navbar = () => {
           to="/event"
           className="text-decoration-none"
           style={{ color: "black" }}
+          exact
         >
           Event
         </Link>
