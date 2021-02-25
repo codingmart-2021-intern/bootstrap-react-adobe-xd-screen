@@ -3,7 +3,7 @@ const allProductsList = {
     "flowers": [
         {
     
-            "product_title": "Pretty Pink Rose Basket Made from Bengal Bamboo",
+            "product_title": "Pretty Pink Rose",
             "actual_price": 8475,
             "current_price": 3645,
             "colors": ["red", "orange", "blue"],
@@ -171,7 +171,7 @@ const allProductsList = {
             "sizes": ["small", "large"],
             "quantity": [500],
             "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, perferendis eveniet? Nobis accusantium dolor, quam magnam excepturi quasi amet quae magni, optio odio ad maxime necessitatibus itaque",
-            "stock": 4,
+            "stock": 0,
             "product_id": 7,
             "slider_image": [
                 {
