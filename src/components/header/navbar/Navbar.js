@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     // Nav link section
     <Row className="px-0 pt-2 justify-content-md-center nav-row">
-      <Col className="d-flex flex-column p-0 m-0">
+      <Col className="d-flex text-center flex-column p-0 m-0">
         <Link
           to="/"
           className="text-decoration-none"
