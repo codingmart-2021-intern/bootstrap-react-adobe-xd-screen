@@ -13,7 +13,7 @@ import Privacy from "./views/privacy";
 import FAQs from "./views/faqs";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
-
+import NotFound from "./components/notFound/NotFound";
 
 const App = () => {
   return (
@@ -35,6 +35,7 @@ const App = () => {
         <Route path="/privacy" exact component={Privacy} />
         <Route path="/faq" exact component={FAQs} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/notfound" exact component={NotFound} />
       </Switch>
       <Footer />
     </Router>

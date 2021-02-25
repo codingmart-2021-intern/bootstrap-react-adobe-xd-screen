@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$grey:  #777;
+$grey2: #cfd5d6;
+$red: #E2886C;
+$white: #fff;
+.text-white{
+  color: $white;
+}
+.text-black{
+  color: black;
+}
+.bg-white{
+  background-color: $white;
+}
+.text-gray-400{
+  caret-color: $grey2;
+}
+.font-lora{
+    font-family: 'lora','sans';
+}
+.font-lora span{
+  padding: 5px;
+}
+.font-lora span:hover, .font-lora span.active{
+    border-bottom: 2px solid #E2886C;
+    cursor: pointer;
+}
+.sub-btn{
+    background: #E2886C 0% 0% no-repeat padding-box;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+.sub-btn:focus, input:focus{
+    outline: none;
+}
+input{
+    width: 90%;
+}
+input:focus +label, input:not(:placeholder-shown) +label{
+    transition: all 0.3s ease-in;
+    top: -60px;
+    left: -10px;
+}
+.orange{
+    color: $red;
+}
+.progress-track-block{
+    position: absolute;
+    top: 6px;
+    left: 12%;
+    width: 75%;
+    height: 2px;
+    background-color: $grey2;
+}
+.progress-track {
+    width: 33%;
+    height: 2px;
+    background-color: $red;
+    z-index: 0;
+}
+.progress-step {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    &:before {
+        content: "";
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 15px;
+        height: 15px;
+        background: $grey2;
+        border: 4px solid $grey2;
+        border-radius: 100%;
+        color: $grey;
+      }
+      
+      // Step's progress bar in default state
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 0%;
+        transition: width 1s ease-in;
+        height: 5px;
+        background: $red;
+        z-index: 0;
+      }
+    &.is-active {
+        color: $red;
+      
+        &:before {
+          background: $white;
+          border: 4px solid $red;
+        }
+      }
+      &.is-complete {
+        color: $red;
+      
+        // Step's circle in complete state
+        &:before {
+          font-size: 10px;
+          color: $white;
+          background: $red;
+          border: 4px solid transparent;
+        }
+      
+        // Step's progress bar in complete state
+        &:after {
+          background: $red;
+        }
+      }
+  }
+  .screen{
+      background: rgba(38, 39, 39, 0.205);
+      width: 100vw;
+      height: 100vh;
+      .inner-block{
+        position: relative;
+        right: 10px;
+        width: 41%;
+        height: 100%;
+      }
+  }
+  .pointer{
+      cursor: pointer;
+  }
+  .close-btn{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+  }
+  .d-flex-around{
+    display: flex;
+    justify-content: space-between;
+    transform: scale(.9);
+  }
+  .space-x-5{
+    word-spacing: 0px;
+  }
+  .input-label{
+    top: -1.8rem;
+    font-size: 16px;
+  }
+  .remBox{
+    width: 5px;
+    height: 5px;
+    padding: 7px;
+    margin-right: 5px;
+    border: solid #E2886C 1px;
+  }
+
+  // Mobile view styles
+  @media only screen and (max-width: 770px) {
+    .font-lora span{
+        border-bottom: 2px solid #bbb7b771;
+        cursor: pointer;
+    }
+    .screen{
+        background: rgba(38, 39, 39, 0.205);
+        width: 100vw;
+        height: 100vh;
+        .inner-block{
+          padding-top: 10px;
+          right: 0;
+          width: 100%;
+          height: 100%;
+        }
+    }
+    .d-flex-around{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .socialcard{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      right: 20px;
+      margin: 10px;
+    }
+    .sub-btn{
+        background: #E2886C 0% 0% no-repeat padding-box;
+        padding: 2px 25px;
+        border-radius: 10px;
+    }
+    .input-label{
+      font-size: 14px;
+    }
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .mob-text{
+      font-size: small;
+    }
+  }
