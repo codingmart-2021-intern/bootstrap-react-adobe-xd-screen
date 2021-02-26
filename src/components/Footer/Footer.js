@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-skin_dark py-2 d-flex justify-content-center align-items-center flex-column flex-sm-row">
-                <span className="text-white mx-3">Follow us </span>
+                <span className="text-white mx-3 d-none d-sm-block">Follow us </span>
                 <div className="d-flex justify-content-around align-items-center gap-3">
                     <div
                         className="w-2 h-2 p-3 bg-white rounded-circle d-flex justify-content-center align-items-center ">
